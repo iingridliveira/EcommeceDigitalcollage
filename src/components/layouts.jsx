@@ -1,20 +1,17 @@
-import React from 'react';
+
 import Header from './header';
 import Footer from './footer';
 
-// Definindo o componente de layout
+
+// eslint-disable-next-line react/prop-types
 const Layout = ({ children }) => {
   return (
-    <div>
-      {/* Componente do cabeçalho */}
-      <Header />
-
-      {/* Conteúdo dinâmico das páginas */}
-      {children}
-
-      {/* Componente do rodapé */}
-      <Footer />
-    </div>
+      <div>
+        <header> {<Header />}</header>
+        <main>{children}</main> 
+        <footer> {<Footer />}</footer>
+      </div>
+  
   );
 };
 

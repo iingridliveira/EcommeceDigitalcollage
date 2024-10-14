@@ -1,14 +1,18 @@
 
 import './App.css'
-import Rotas from './routes/rotas'
+import Rotas from './routes/rotas';
 import Layout from './components/layouts'
 
 function App() {
  
 
-  return ( <Layout children = {<Rotas/>}/>
+  return (
     
-  )
+    <Layout>
+      <Rotas/>
+    </Layout>
+    
+  );
 }
 
 export default App
