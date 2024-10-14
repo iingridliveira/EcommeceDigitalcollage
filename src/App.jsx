@@ -1,12 +1,13 @@
 
 import './App.css'
 import Rotas from './routes/rotas'
+import Layout from './components/layouts'
 
 function App() {
  
 
-  return (
-   <Rotas/>
+  return ( <Layout children = {<Rotas/>}/>
+    
   )
 }
 
