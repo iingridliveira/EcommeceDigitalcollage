@@ -7,9 +7,7 @@ const Home = () => {
       <section>
         <main className="d-flex flex-column flex-md-row align-items-center justify-content-between">
           {/* Div para o texto e botão */}
-          <div
-            className="order-1 order-md-0 flex-wrap mt-3 mt-md-0 px-5 px-5 mx-5 my-5 "
-          >
+          <div className="order-1 order-md-0 flex-wrap mt-3 mt-md-0 px-5 px-5 mx-5 my-5 ">
             <h5 style={{ color: "#F6AA1C" }}>
               Melhores ofertas personalizadas
             </h5>
@@ -28,9 +26,9 @@ const Home = () => {
             </button>
           </div>
           {/* Div para a imagem com ordem 1 no mobile */}
-          <div className="order-0 ml-0 " style={{  margin:"-110px"}}>
+          <div className="order-0 ml-0 " style={{ margin: "-110px" }}>
             <img
-              src="../public/img/White-Sneakers-PNG-Clipart 1.png"
+              src="../public/img/White-Sneakers.png"
               alt="Tênis Branco"
               style={{ Width: "100%", height: "600px" }}
             />
