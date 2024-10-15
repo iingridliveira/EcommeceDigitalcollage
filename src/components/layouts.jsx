@@ -6,12 +6,11 @@ import Footer from './footer';
 // eslint-disable-next-line react/prop-types
 const Layout = ({ children }) => {
   return (
-      <div>
-        <header> {<Header />}</header>
-        <main>{children}</main> 
-        <footer> {<Footer />}</footer>
-      </div>
-  
+    <div>
+      <header> {<Header />}</header>
+      <main className=" container mt-5 ">{children}</main>
+      <footer className="text-white pt-3 mw-100">{<Footer />}</footer>
+    </div>
   );
 };
 
