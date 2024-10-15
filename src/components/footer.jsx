@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
       <>
-        <div className="container t text-md-start mt-5 border-bottom border-1 border-white pb-4">
+        <div className="container  text-md-start mt-5 border-bottom border-1 border-white pb-4">
           <div className="row mt-3">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-automb-4">
               <h2 className=" fw-bold mb-4">
@@ -46,6 +46,7 @@ const Footer = () => {
                 <li>Tênis</li>
               </ul>
             </div>
+            
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className=" fw-bold mb-4">Contatos</h6>
               <ul className="list-unstyled">
