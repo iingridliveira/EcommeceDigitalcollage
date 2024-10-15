@@ -9,7 +9,6 @@ const Home = () => {
           {/* Div para o texto e botão */}
           <div
             className="order-1 order-md-0 flex-wrap mt-3 mt-md-0 px-5 px-5 mx-5 my-5 "
-            style={{ border: "1px solid, red" }}
           >
             <h5 style={{ color: "#F6AA1C" }}>
               Melhores ofertas personalizadas
@@ -29,7 +28,7 @@ const Home = () => {
             </button>
           </div>
           {/* Div para a imagem com ordem 1 no mobile */}
-          <div className="order-0 ml-0 " style={{ border: "1px solid, red", margin:"-110px"}}>
+          <div className="order-0 ml-0 " style={{  margin:"-110px"}}>
             <img
               src="../public/img/White-Sneakers-PNG-Clipart 1.png"
               alt="Tênis Branco"
