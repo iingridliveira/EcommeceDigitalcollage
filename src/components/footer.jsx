@@ -15,13 +15,13 @@ const Footer = () => {
               </p>
               <ul className="list-unstyled ">
                 <li className="d-inline-block me-3">
-                  <img src="../public/img/Path 22671.png" />
+                  <img src="/img/Path 22671.png" />
                 </li>
                 <li className="d-inline-block me-3">
-                  <img src="../public/img/Path 22670.png" />
+                  <img src="/img/Path 22670.png" />
                 </li>
                 <li className="d-inline-block me-3">
-                  <img src="../public/img/Path 22667.png" />
+                  <img src="/img/Path 22667.png" />
                 </li>
               </ul>
             </div>
