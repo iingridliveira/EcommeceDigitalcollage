@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="col-md-3 col-lg-4 col-xl-3 mx-automb-4">
               <h2 className=" fw-bold mb-4">
                 <i className="fas fa-gem me-3"></i>{" "}
-                <img src="../public/img/colegelogo.png" /> Digital Storage
+                <img src="/img/colegelogo.png" /> Digital Storage
               </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -45,7 +45,7 @@ const Home = () => {
                 "linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%, rgba(255, 255, 255, 0) 100%)",
             }}
           >
-            <img src="../public/img/Laye 1.png" alt="Tênis Branco" />
+            <img src="/img/Laye 1.png" alt="Tênis Branco" />
           </div>
           {/* Div para o texto e botão */}
           <div className="order-1 order-md-0 flex-wrap mt-3 mt-md-0 px-5 mx-5 my-5">
