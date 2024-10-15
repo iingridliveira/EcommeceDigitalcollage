@@ -28,7 +28,7 @@ const Home = () => {
           {/* Div para a imagem com ordem 1 no mobile */}
           <div className="order-0 ml-0 " style={{ margin: "-110px" }}>
             <img
-              src="../public/img/White-Sneakers.png"
+              src={"../public/img/White-Sneakers.png"}
               alt="Tênis Branco"
               style={{ Width: "100%", height: "600px" }}
             />
