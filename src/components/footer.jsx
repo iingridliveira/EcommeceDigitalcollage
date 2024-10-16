@@ -6,22 +6,21 @@ const Footer = () => {
             <div className="col-md-3 col-lg-4 col-xl-3 mx-automb-4">
               <h2 className=" fw-bold mb-4">
                 <i className="fas fa-gem me-3"></i>{" "}
-                <img src="../public/img/colegelogo.png" /> Digital Storage
+                <img src="src/assets/Vector-6.svg" /> Digital Store
               </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloribus eaque blanditiis rem iusto doloremque, tempora ipsa
-                
               </p>
               <ul className="list-unstyled ">
                 <li className="d-inline-block me-3">
-                  <img src="../public/img/Path 22671.png" />
+                  <img src="src/assets/Path 22671.svg" />
                 </li>
                 <li className="d-inline-block me-3">
-                  <img src="../public/img/Path 22670.png" />
+                  <img src="src/assets/Path 22670.svg" />
                 </li>
                 <li className="d-inline-block me-3">
-                  <img src="../public/img/Path 22667.png" />
+                  <img src="src/assets/Path 22667.svg" />
                 </li>
               </ul>
             </div>
@@ -46,7 +45,7 @@ const Footer = () => {
                 <li>Tênis</li>
               </ul>
             </div>
-            
+
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className=" fw-bold mb-4">Contatos</h6>
               <ul className="list-unstyled">

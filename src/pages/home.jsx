@@ -28,7 +28,7 @@ const Home = () => {
           {/* Div para a imagem com ordem 1 no mobile */}
           <div className="order-0 ml-0 " style={{ margin: "-110px" }}>
             <img
-              src="../public/img/White-Sneakers.png"
+              src="src/assets/White-Sneakers-PNG-Clipart 1.svg"
               alt="Tênis Branco"
               style={{ Width: "100%", height: "600px" }}
             />
@@ -45,7 +45,7 @@ const Home = () => {
                 "linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%, rgba(255, 255, 255, 0) 100%)",
             }}
           >
-            <img src="../public/img/Laye 1.png" alt="Tênis Branco" />
+            <img src="src/assets/Laye 1.svg" alt="Tênis Branco" />
           </div>
           {/* Div para o texto e botão */}
           <div className="order-1 order-md-0 flex-wrap mt-3 mt-md-0 px-5 mx-5 my-5">
