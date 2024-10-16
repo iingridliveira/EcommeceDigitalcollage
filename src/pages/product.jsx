@@ -1,4 +1,4 @@
-
+import Footer from "../components/footer";
 
  const Product = () => {
   return (
