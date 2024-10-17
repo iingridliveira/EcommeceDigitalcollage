@@ -5,6 +5,7 @@ import WhiteSneakers from "../assets/White-Sneakers-PNG-Clipart.svg";
 import BlackSneakers from "../assets/Laye 1.svg";
 import orangeBoll from "../assets/Ornament 11.svg";
 import threePoints from "../assets/Group 53582.svg";
+import SectionThree from "../components/SectionThree";
 
 const Home = () => {
   return (
@@ -45,7 +46,7 @@ const Home = () => {
           <img src={threePoints}/>
         </div>
       </Section>
-      <Section id={""}></Section>
+     <SectionThree/>
       <Section></Section>
       <Section cor={"bg-secondary  bg-opacity-10 py-5"}>
         <main className="  container d-flex flex-column flex-md-row align-items-center justify-content-between">
