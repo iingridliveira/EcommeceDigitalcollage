@@ -2,6 +2,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Section from "../components/section";
 import WhiteSneakers from "../assets/White-Sneakers-PNG-Clipart.svg";
+import BlackSneakers from "../assets/Laye 1.svg";
+import orangeBoll from "../assets/Ornament 11.svg";
+import threePoints from "../assets/Group 53582.svg";
+
 const Home = () => {
   return (
     <>
@@ -35,13 +39,10 @@ const Home = () => {
               style={{ Width: "100%", height: "600px" }}
             />
           </div>
-          <img
-            className="pb-5 order-0 ml-0"
-            src="/src/assets/Ornament 11.svg"
-          />
+          <img className="pb-5 order-0 ml-0" src={orangeBoll} />
         </main>
         <div className="text-center m-5">
-          <img src="/src/assets/Group 53582.svg" />
+          <img src={threePoints}/>
         </div>
       </Section>
       <Section id={""}></Section>
@@ -56,7 +57,7 @@ const Home = () => {
                 "linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%, rgba(255, 255, 255, 0) 100%)",
             }}
           >
-            <img src="/src/assets/Laye 1.svg" alt="Tênis Branco" />
+            <img src={BlackSneakers} alt="Tênis preto" />
           </div>
           {/* Div para o texto e botão */}
           <div className="order-1 order-md-0 flex-wrap mt-3 mt-md-0 px-5 mx-5 my-5">
