@@ -1,7 +1,7 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Section from "../components/section";
-
+import WhiteSneakers from "../assets/White-Sneakers-PNG-Clipart.svg";
 const Home = () => {
   return (
     <>
@@ -30,7 +30,7 @@ const Home = () => {
           {/* Div para a imagem com ordem 1 no mobile */}
           <div className="order-0 ml-0 " style={{ margin: "-110px" }}>
             <img
-              src="/src/assets/White-Sneakers-PNG-Clipart 1.svg"
+              src={WhiteSneakers}
               alt="Tênis Branco"
               style={{ Width: "100%", height: "600px" }}
             />
