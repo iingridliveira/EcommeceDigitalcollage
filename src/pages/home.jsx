@@ -1,18 +1,20 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import Section from "../components/section";
 
 const Home = () => {
   return (
     <>
-      <section>
-        <main className="d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <Section id={""} cor={"bg-secondary  bg-opacity-10"}>
+        <main className="  container mt-5  d-flex flex-column flex-md-row align-items-center justify-content-between">
+          {/* Div para o texto e botão */}
           {/* Div para o texto e botão */}
           <div className="order-1 order-md-0 flex-wrap mt-3 mt-md-0 px-5 px-5 mx-5 my-5 ">
             <h5 style={{ color: "#F6AA1C" }}>
               Melhores ofertas personalizadas
             </h5>
-            <h1 style={{ fontSize: "65px" }} className="fw-bolder">
-              Queima de estoque Nike 🔥
+            <h1 style={{ fontSize: "55px" }} className="fw-bolder">
+              Queima de estoque Nike🔥
             </h1>
             <p style={{ color: "#474747" }}>
               Consequat culpa exercitation mollit nisi excepteur do do tempor
@@ -33,10 +35,16 @@ const Home = () => {
               style={{ Width: "100%", height: "600px" }}
             />
           </div>
+          <img className="pb-5 order-0 ml-0" src="src/assets/Ornament 11.svg" />
         </main>
-      </section>
-      <section className="my-5">
-        <main className="d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div className="text-center m-5">
+          <img src="src/assets/Group 53582.svg" />
+        </div>
+      </Section>
+      <Section id={""}></Section>
+      <Section></Section>
+      <Section cor={"bg-secondary  bg-opacity-10"}>
+        <main className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
           {/* Div para a imagem com ordem 1 no mobile */}
           <div
             className="order-0 rounded-circle  py-5"
@@ -64,7 +72,7 @@ const Home = () => {
             </button>
           </div>
         </main>
-      </section>
+      </Section>
     </>
   );
 };
