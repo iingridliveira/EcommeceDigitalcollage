@@ -30,30 +30,33 @@ const Home = () => {
           {/* Div para a imagem com ordem 1 no mobile */}
           <div className="order-0 ml-0 " style={{ margin: "-110px" }}>
             <img
-              src="src/assets/White-Sneakers-PNG-Clipart 1.svg"
+              src="/src/assets/White-Sneakers-PNG-Clipart 1.svg"
               alt="Tênis Branco"
               style={{ Width: "100%", height: "600px" }}
             />
           </div>
-          <img className="pb-5 order-0 ml-0" src="src/assets/Ornament 11.svg" />
+          <img
+            className="pb-5 order-0 ml-0"
+            src="/src/assets/Ornament 11.svg"
+          />
         </main>
         <div className="text-center m-5">
-          <img src="src/assets/Group 53582.svg" />
+          <img src="/src/assets/Group 53582.svg" />
         </div>
       </Section>
       <Section id={""}></Section>
       <Section></Section>
-      <Section cor={"bg-secondary  bg-opacity-10"}>
-        <main className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <Section cor={"bg-secondary  bg-opacity-10 py-5"}>
+        <main className="  container d-flex flex-column flex-md-row align-items-center justify-content-between">
           {/* Div para a imagem com ordem 1 no mobile */}
           <div
-            className="order-0 rounded-circle  py-5"
+            className=" order-0 rounded-circle "
             style={{
               background:
                 "linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%, rgba(255, 255, 255, 0) 100%)",
             }}
           >
-            <img src="src/assets/Laye 1.svg" alt="Tênis Branco" />
+            <img src="/src/assets/Laye 1.svg" alt="Tênis Branco" />
           </div>
           {/* Div para o texto e botão */}
           <div className="order-1 order-md-0 flex-wrap mt-3 mt-md-0 px-5 mx-5 my-5">
