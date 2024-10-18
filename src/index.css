@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+ 
   /* Esconde a barra de rolagem horizontal, se não for necessária */
 }
 

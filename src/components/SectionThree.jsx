@@ -8,7 +8,7 @@ import Card2 from "./cards";
 const SectionThree = () => {
     return (
       <>
-        <Section cor={"bg-primary bg-opacity-10"}>
+        <Section cor={""}>
           <main className="container ">
             <div>
               <h3>Coleções em destaque</h3>

@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <header> {<Header />}</header>
-      <main className=" ">{children}</main>
+      <main className="bg-primary bg-opacity-10 ">{children}</main>
       <footer className="text-white pt-3 mw-100">{<Footer />}</footer>
     </div>
   );
