@@ -7,7 +7,7 @@ import Footer from './footer';
 const Layout = ({ children }) => {
   return (
     <div>
-      <header className='container text-md-start d-flow-collum m'> {<Header />}</header>
+      <header className='text-md-start d-flow-collum m bg-white'> {<Header />}</header>
       <main className=" container mt-5 ">{children}</main>
       <footer className="text-white pt-3 mw-100">{<Footer />}</footer>
     </div>
