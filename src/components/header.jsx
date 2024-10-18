@@ -4,16 +4,18 @@ const Header = () => {
   return (
     <>
     
-    <main className="container">
+    <main className="container d-flex-collumn">
         <div className="d-flex w-max-content align-items-center gap-3">
-            <div className="d-flex w-25 justify-content-center align-items-center bg-black gap-3">
+            <div className="d-flex justify-content-center align-items-center gap-3 py-4">
                 <img src="src/assets/logo.svg"/>
                 <h2 style={{color: "#C92071"}} className="fw-bold flex-center mt-1rem text-nowrap">Digital Store</h2>
             </div>
-                <form action="">
-                    <input type="search" name="search" id="search-home" placeholder="Pesquisar produto..."  />
-                    <button type="buscar"></button>
-                </form>
+            
+            <form action="">
+                <input type="search" name="search" id="search-home" placeholder="Pesquisar produto..."  />
+                <button type="buscar"></button>
+            </form>
+            
             <div>
                 <a href="">Cadastre-se</a>
                 <button type="submit">Entrar</button>

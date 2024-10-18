@@ -16,6 +16,20 @@ body {
   /* Esconde a barra de rolagem horizontal, se não for necessária */
 }
 
+
+/* input {
+  padding: 1.04rem 10rem;
+  background-color: #eee9e9;
+  color: black;
+  border: 10;
+  border-radius: 0.8rem;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: start;
+} */
+
+
 footer{
   background-color: #1F1F1F;
 }
