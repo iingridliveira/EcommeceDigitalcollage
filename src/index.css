@@ -8,11 +8,13 @@
 
 body {
   font-family: "Inter", sans-serif;
-  overflow-x: hidden;
+  height: 100%;
   margin: 0;
   padding: 0;
-
+  overflow-x: hidden;
+  /* Esconde a barra de rolagem horizontal, se não for necessária */
 }
+
 footer{
   background-color: #1F1F1F;
 }
