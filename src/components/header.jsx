@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import search from "../assets/search.svg";
+
 
 const Header = () => {
   return (
@@ -11,41 +13,67 @@ const Header = () => {
                 <h2 style={{color: "#C92071"}} className="fw-bold flex-center mt-1rem text-nowrap">Digital Store</h2>
             </div>
             
-            <form action="">
-                <input type="search" name="search" id="search-home" placeholder="Pesquisar produto..."  />
-                <button type="buscar"></button>
-            </form>
+            <div className="input-group mb-3">
+                <input type="text" className="form-control bg-body-tertiary border-right-0" placeholder="Pesquisar produto..." aria-label="Pesquisar-Produto" aria/>
+
+                <span className="input-group-text" id="basic-addon'">
+                    <a href="#"><img src={search} alt="icone-de-pesquisa"/></a>
+                </span>
+            </div>
             
             <div>
-                <a href="">Cadastre-se</a>
+                <a className="color-red" href="#">Cadastre-se</a>
                 <button type="submit">Entrar</button>
             </div>
         </div>
         
-            <nav>
-                <ul className="nav nav-underline text-primary">
-                    <NavLink>
-                        <li className="nav-item">
-                            <a className="nav-link text-decoration-none" aria-current="page" href="#">Home</a>
-                        </li>
-                    </NavLink>
-                     <NavLink>
-                         <li class="nav-item">
-                           <a class="nav-link" href="#">Produtos</a>
-                         </li>
-                     </NavLink>
-                     <NavLink>
-                         <li class="nav-item">
-                           <a class="nav-link" href="#">Categorias</a>
-                         </li>
-                     </NavLink>
-                     <NavLink>
-                         <li class="nav-item">
-                           <a class="nav-link" href="#">Meus Produtos</a>
-                         </li>
-                     </NavLink>
-                </ul>
-            </nav>
+        <nav>
+            <ul className="nav nav-underline text-primary">
+              <li className="nav-item">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Home
+                </NavLink>
+              </li>
+              
+              <li className="nav-item">
+                <NavLink
+                  to="/produtos"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Produtos
+                </NavLink>
+              </li>
+              
+              <li className="nav-item">
+                <NavLink
+                  to="/categorias"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Categorias
+                </NavLink>
+              </li>
+              
+              <li className="nav-item">
+                <NavLink
+                  to="/meus-produtos"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Meus Produtos
+                </NavLink>
+              </li>
+            </ul>
+        </nav>
     </main>
         </> );
 }
