@@ -30,9 +30,9 @@ footer{
   background-color: #1F1F1F;
 }
 .carousel-indicators [data-bs-target] {
-  width: 16px;
+  width: 12px;
   
-  height: 16px;
+  height: 12px;
  
   border-radius: 50%;
  

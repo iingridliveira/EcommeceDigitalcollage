@@ -9,7 +9,7 @@ const SectionThree = () => {
     return (
       <>
         <Section cor={""}>
-          <main className="container ">
+          <main className="container-xxl ">
             <div>
               <h3>Coleções em destaque</h3>
             </div>

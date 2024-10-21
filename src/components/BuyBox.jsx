@@ -3,7 +3,7 @@ const BuyBox = ({photo, price,name,priceDiscount}) => {
     return (
       <>
         <main className=" ">
-          <div className="bg-white  me-3 rounded-1 shadow-lg py-5 align-items-center">
+          <div className="bg-white  me-3 rounded-1 shadow-lg py-3 align-items-center">
             {photo}
           </div>
 

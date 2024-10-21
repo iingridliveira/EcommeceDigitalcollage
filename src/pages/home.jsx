@@ -63,10 +63,26 @@ const Home = () => {
               }
             />
           }
+          slide4={
+            <SectionOne
+              title={
+                <h1 style={{ fontSize: "80px" }} className="">
+                  Vem que tá bombamdo 💣
+                </h1>
+              }
+              img={
+                <img
+                  src={WhiteSneakers}
+                  alt="Tênis Branco"
+                  style={{ Width: "100%", height: "600px" }}
+                />
+              }
+            />
+          }
         />
       </Section>
       <SectionThree />
-      <Section cor={"container"}>
+      <Section cor={"container-xxl"}>
         <div className=" container d-flex justify-content-between ">
           <h4 className="bold-text">Produtos em alta</h4>
           <div className="d-flex mx-5">

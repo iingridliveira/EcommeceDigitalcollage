@@ -65,7 +65,7 @@ const getProducts = () =>{
  }, []);
        
         return (
-          <div className=" d-flex flex-wrap ">
+          <div className=" d-flex flex-wrap container-xxl">
             {Product.map((item, index) => {
               if (index >= 8) {
                 // Quando chegar no nono produto, interrompe a renderização
