@@ -22,7 +22,7 @@ const Header = () => {
         
             <nav>
                 <ul className="nav nav-underline text-primary">
-                    <NavLink>
+                    <NavLink >
                         <li className="nav-item">
                             <a className="nav-link text-decoration-none" aria-current="page" href="#">Home</a>
                         </li>

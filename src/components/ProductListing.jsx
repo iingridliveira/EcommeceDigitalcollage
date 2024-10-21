@@ -11,7 +11,7 @@ const getProducts = () =>{
   const ProductListing = [
     {
       name: "Nome do produto 1",
-      image: <img src={SneakersBox} />,
+      image: <img  src={SneakersBox} />,
       price: 200,
       priceDiscount: 149.9,
     },
@@ -65,7 +65,7 @@ const getProducts = () =>{
  }, []);
        
         return (
-          <>
+          <div className=" d-flex flex-wrap container-xxl">
             {Product.map((item, index) => {
               if (index >= 8) {
                 // Quando chegar no nono produto, interrompe a renderização
@@ -82,7 +82,7 @@ const getProducts = () =>{
                 />
               );
             })}
-          </>
+          </div>
         );
 }
  

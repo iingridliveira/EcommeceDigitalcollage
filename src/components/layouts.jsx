@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <header className='text-md-start d-flow-collum m bg-white'> {<Header />}</header>
-      <main className=" container mt-5 ">{children}</main>
+      <main className="  mt-5 ">{children}</main>
       <footer className="text-white pt-3 mw-100">{<Footer />}</footer>
     </div>
   );

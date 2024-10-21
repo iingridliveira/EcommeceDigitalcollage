@@ -6,16 +6,44 @@
   color-scheme: light dark;
 }
 
-body {
+html, body {
   font-family: "Inter", sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: rgba(245, 245, 245, 1);
+
+  
  
   /* Esconde a barra de rolagem horizontal, se não for necessária */
 }
+h1,h2 {
+   font-weight: 800;
+  
+ 
+  /* Applying weight 800 to headings */
+}
+
 
 footer{
   background-color: #1F1F1F;
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  
+  height: 12px;
+ 
+  border-radius: 50%;
+ 
+  background-color: #949494;
+  
+  margin: 0 5px;
+
+
+}
+
+.carousel-indicators .active {
+  background-color: #C92071
+  
 }
