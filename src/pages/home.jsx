@@ -3,50 +3,67 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Section from "../components/section";
 import WhiteSneakers from "../assets/White-Sneakers-PNG-Clipart.svg";
 import BlackSneakers from "../assets/Laye 1.svg";
-import orangeBoll from "../assets/Ornament 11.svg";
-import threePoints from "../assets/Group 53582.svg";
 import SectionThree from "../components/SectionThree";
 import ProductListing from "../components/ProductListing";
 import Arrow from "../assets/Right 24px.svg";
+import Carousel from "../components/Carousel";
+import SectionOne from "../components/SectionOne";
+
 
 const Home = () => {
   return (
     <>
-      <Section id={""} cor={"bg-secondary  bg-opacity-10"}>
-        <main className="  container   d-flex flex-column flex-md-row align-items-center justify-content-between ">
-          {/* Div para o texto e botão */}
-          {/* Div para o texto e botão */}
-          <div className="order-1 order-md-0 flex-wrap mt-3 mt-md-0   ">
-            <h5 style={{ color: "#F6AA1C" }}>
-              Melhores ofertas personalizadas
-            </h5>
-            <h1 style={{ fontSize: "80px" }} className="">
-              Queima de estoque Nike🔥
-            </h1>
-            <p style={{ color: "#474747", fontSize: "18px" }}>
-              Consequat culpa exercitation mollit nisi excepteur do do tempor
-              laboris eiusmod irure consectetur.
-            </p>
-            <button
-              className="px-5 py-2  text-white border-0 rounded fw-bold"
-              style={{ background: "#C92071" }}
-            >
-              Ver Ofertas
-            </button>
-          </div>
-          {/* Div para a imagem com ordem 1 no mobile */}
-          <div className="order-0 ml-0  " style={{ margin: "-110px" }}>
-            <img
-              src={WhiteSneakers}
-              alt="Tênis Branco"
-              style={{ Width: "100%", height: "600px" }}
+      <Section id={""} cor={"bg-secondary  bg-opacity-10 "}>
+        <Carousel
+          slideUne={
+            <SectionOne
+              title={
+                <h1 style={{ fontSize: "80px" }} className="">
+                  Queima de estoque Nike🔥
+                </h1>
+              }
+              img={
+                <img
+                  src={WhiteSneakers}
+                  alt="Tênis Branco"
+                  style={{ Width: "100%", height: "600px" }}
+                />
+              }
             />
-          </div>
-          <img className="pb-5 order-0 ml-0" src={orangeBoll} />
-        </main>
-        <div className="text-center m-5">
-          <img src={threePoints} />
-        </div>
+          }
+          slideT={
+            <SectionOne
+              title={
+                <h1 style={{ fontSize: "80px" }} className="">
+                  O melhor é só aqui😍
+                </h1>
+              }
+              img={
+                <img
+                  src={WhiteSneakers}
+                  alt="Tênis Branco"
+                  style={{ Width: "100%", height: "600px" }}
+                />
+              }
+            />
+          }
+          slide3={
+            <SectionOne
+              title={
+                <h1 style={{ fontSize: "80px" }} className="">
+                  Tá no pé, tá na moda😎
+                </h1>
+              }
+              img={
+                <img
+                  src={WhiteSneakers}
+                  alt="Tênis Branco"
+                  style={{ Width: "100%", height: "600px" }}
+                />
+              }
+            />
+          }
+        />
       </Section>
       <SectionThree />
       <Section cor={"container"}>

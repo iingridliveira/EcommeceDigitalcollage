@@ -29,3 +29,21 @@ h1,h2 {
 footer{
   background-color: #1F1F1F;
 }
+.carousel-indicators [data-bs-target] {
+  width: 16px;
+  
+  height: 16px;
+ 
+  border-radius: 50%;
+ 
+  background-color: #949494;
+  
+  margin: 0 5px;
+
+
+}
+
+.carousel-indicators .active {
+  background-color: #C92071
+  
+}
