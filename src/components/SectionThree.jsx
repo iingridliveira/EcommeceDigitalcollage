@@ -14,10 +14,10 @@ const SectionThree = () => {
       <>
         <Section cor={""}>
           <main className="container-xxl ">
-            <div>
+            <div className="mb-5">
               <h3>Coleções em destaque</h3>
             </div>
-            <div className="d-flex flex-column  align-items-center ">
+            <div className="d-flex container mb-5  ">
             <Card1 nome={"Novo drop Supreme"} img={Shirt}/>
             <Card1 nome={"Coleção Adidas"} img={Sneaker}/>
             <Card1 nome={"Novo Beats Bass"} img={Headphone}/>
