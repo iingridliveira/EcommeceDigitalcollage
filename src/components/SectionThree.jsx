@@ -3,7 +3,7 @@ import Shirts from "../assets/Vector-1.svg"
 import Sneakers from "../assets/Vector-5.svg";
 import Pants from "../assets/Vector-2.svg";
 import Phones from "../assets/Vector-4.svg";
-import Card2 from "./cards";
+import Card2 from "./BayBox/cards";
 
 const SectionThree = () => {
     return (

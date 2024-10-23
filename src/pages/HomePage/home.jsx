@@ -1,13 +1,13 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import Section from "../components/section";
-import WhiteSneakers from "../assets/White-Sneakers-PNG-Clipart.svg";
-import BlackSneakers from "../assets/Laye 1.svg";
-import SectionThree from "../components/SectionThree";
-import ProductListing from "../components/ProductListing";
-import Arrow from "../assets/Right 24px.svg";
-import Carousel from "../components/Carousel";
-import SectionOne from "../components/SectionOne";
+import Section from "../../components/section";
+import WhiteSneakers from "../../assets/White-Sneakers-PNG-Clipart.svg";
+import BlackSneakers from "../../assets/Laye 1.svg";
+import SectionThree from "../../components/SectionThree";
+import ProductListing from "../../components/ProductListing";
+import Arrow from "../../assets/Right 24px.svg";
+import Carousel from "../../components/Carousel";
+import SectionOne from "../../components/SectionOne";
 
 
 const Home = () => {

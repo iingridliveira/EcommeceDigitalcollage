@@ -27,7 +27,7 @@ const Header = () => {
                             <a className="nav-link text-decoration-none" aria-current="page" href="#">Home</a>
                         </li>
                     </NavLink>
-                     <NavLink>
+                     <NavLink to={"/product"}>
                          <li class="nav-item">
                            <a class="nav-link" href="#">Produtos</a>
                          </li>
