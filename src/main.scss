@@ -1,3 +1,7 @@
+// Importa Bootstrap completo
+@import "bootstrap/scss/bootstrap";
+
+// Adicione suas customizações abaixo
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
  
@@ -17,6 +21,8 @@
 .nav-link:link {
   color: #C92071; /* Cor em hover e quando ativo */
 }
+
+
 
 html, body {
 
@@ -56,7 +62,24 @@ footer{
 
 }
 
+.nav-underline .nav-link.active {
+  --bs-nav-underline-link-active-color:#C92071;
+  color: var(--bs-nav-underline-link-active-color);
+  /* Define a cor desejada */
+}
+
 .carousel-indicators .active {
   background-color: #C92071
   
 }
+
+$bg-secondary: (
+  "background": red
+);
+
+$bs-nav-underline-link-active-color: (
+  "color": #c92071
+)
+
+
+

@@ -26,8 +26,9 @@ const Header = () => {
                 <button type="submit">Entrar</button>
             </div>
         </div>
+        
         <nav>
-            <ul className="nav nav-underline text-primary">
+            <ul className="nav nav-underline">
               <li className="nav-item">
                 <NavLink
                   to="/"
