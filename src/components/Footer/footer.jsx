@@ -1,7 +1,7 @@
-import Facebook from "../assets/Path 22671.svg";
-import Intagram from "../assets/Group 2556.svg";
-import X from "../assets/Path 22667.svg";
-import Logo from "../assets/Vector-6.svg";
+import Facebook from "../../assets/Path 22671.svg";
+import Intagram from "../../assets/Group 2556.svg";
+import X from "../../assets/Path 22667.svg";
+import Logo from "../../assets/Vector-6.svg";
 const Footer = () => {
   return (
     <>

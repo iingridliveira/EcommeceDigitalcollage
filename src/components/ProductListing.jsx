@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import BuyBox from "./BuyBox";
+import BuyBox from "./BayBox/BuyBox";
 import SneakersBox from "../assets/Layer 1aa 2.svg";
 
 const ProductListing = () => {
