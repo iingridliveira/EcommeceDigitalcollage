@@ -26,7 +26,6 @@ const Header = () => {
                 <button type="submit">Entrar</button>
             </div>
         </div>
-        
         <nav>
             <ul className="nav nav-underline text-primary">
               <li className="nav-item">
@@ -74,6 +73,7 @@ const Header = () => {
               </li>
             </ul>
         </nav>
+
     </main>
         </> );
 }
