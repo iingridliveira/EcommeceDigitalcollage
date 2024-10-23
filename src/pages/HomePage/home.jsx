@@ -98,11 +98,12 @@ const Home = () => {
         <main className="  container d-flex flex-column flex-md-row align-items-center justify-content-between ">
           {/* Div para a imagem com ordem 1 no mobile */}
           <div
+
             className=" order-0 ratio ratio-1x1 rounded-circle w-75  "
             style={{
               background:
                 "linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%, rgba(255, 255, 255, 0) 100%)",
-            }}
+              }}
           >
             <img className="" src={BlackSneakers} alt="Tênis preto" />
           </div>
