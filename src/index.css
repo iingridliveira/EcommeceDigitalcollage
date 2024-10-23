@@ -2,11 +2,24 @@
 :root {
  
   
-
   color-scheme: light dark;
 }
 
+
+.nav-link {
+  color: #474747; /* Cor padrão */
+  text-decoration: none; /* Sem sublinhado */
+  transition: color 0.3s ease; /* Efeito suave */
+}
+
+.nav-link:hover,
+.nav-link .active {
+  color: #C92071; /* Cor em hover e quando ativo */
+}
+
+
 html, body {
+
   font-family: "Inter", sans-serif;
   height: 100%;
   margin: 0;
