@@ -1,3 +1,4 @@
+import SearchProducts from "../../components/search";
 
 
 
@@ -6,7 +7,9 @@
     <>
     <h1>
  
-     
+
+ <SearchProducts/>
+
     </h1>
     </>
   )

@@ -1,30 +1,16 @@
-import { useState, useEffect } from "react";
-import { ProductListingArray } from "./array";
+import { useContext } from "react";
+import { SearchContext } from "../context";
 import BuyBox from "./BayBox/BuyBox";
 
-const Search = () => {
+const SearchProducts = () => {
 
-   const [search, setSearch]= useState('')
-   const [ buttonseach, setButtonseach] = useState([])
-
-   const filterProduct = ()=>{
-
-    const response = ProductListingArray;
-    const lowerSearch = search.toLowerCase();
-    //setSearch(response);
-    const  button = response.filter((product)=>product.name.toLowerCase().includes( lowerSearch ));
-     setButtonseach( button)
-
-   }
-   useEffect(() => {
-      filterProduct()
-   }, [ ]);
+    const {buttonseach } = useContext(SearchContext);
+   
+   
+   
     return (
       <>
-      
-        <input type="text" value={search} onChange={(ev)=>setSearch(ev.target.value)}/>
-        <button onClick={filterProduct}>aaaa</button>
-
+   
          <div className=" d-flex flex-wrap container-xxl d-md-flex  ">
          
 
@@ -42,4 +28,4 @@ const Search = () => {
     );
 }
  
-export default Search;
+export default SearchProducts;

@@ -9,7 +9,7 @@ import Headphone from "../assets/d9db11953a2d185d37246bb1f500c957 1.svg"
 import Sneaker from "../assets/ddd 1.svg"
 import Shirt from "../assets/star-wars-storm-trooper-supreme-shirts-supreme-t-shirt-snoopy-clothing-apparel-t-shirt-text-transparent-png-616696 1.svg"
 
-const SectionThree = () => {
+const SectionThree = ({name}) => {
     return (
       <>
         <Section cor={""}>
@@ -21,6 +21,7 @@ const SectionThree = () => {
             <Card1 nome={"Novo drop Supreme"} img={Shirt}/>
             <Card1 nome={"Coleção Adidas"} img={Sneaker}/>
             <Card1 nome={"Novo Beats Bass"} img={Headphone}/>
+            
             </div>
             <div className=" d-flex flex-column  align-items-center justify-content-between">
               <div>
