@@ -1,10 +1,15 @@
+import SearchProducts from "../../components/search";
+
 
 
  const Product = () => {
   return (
     <>
     <h1>
-        Produtos
+ 
+
+ <SearchProducts/>
+
     </h1>
     </>
   )

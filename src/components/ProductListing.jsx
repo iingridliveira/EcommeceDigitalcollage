@@ -1,71 +1,22 @@
 import { useState, useEffect } from "react";
 import BuyBox from "./BayBox/BuyBox";
-import SneakersBox from "../assets/Layer 1aa 2.svg";
+import { ProductListingArray } from "./array";
 
-const ProductListing = () => {
-    
+const ProductListing = () => { 
 const [Product, setProduto] = useState([]);
-
-
 const getProducts = () =>{
-  const ProductListing = [
-    {
-      name: "Nome do produto 1",
-      image: <img  src={SneakersBox} />,
-      price: 200,
-      priceDiscount: 149.9,
-    },
-    {
-      name: "Nome do produto 2",
-      image: <img src={SneakersBox} />,
-      price: 49.9,
-    },
-    {
-      name: "Nome do produto 2",
-      image: <img src={SneakersBox} />,
-      price: 49.9,
-    },
-    {
-      name: "Nome do produto 2",
-      image: <img src={SneakersBox} />,
-      price: 49.9,
-    },
-    {
-      name: "Nome do produto 2",
-      image: <img src={SneakersBox} />,
-      price: 49.9,
-    },
-    {
-      name: "Nome do produto 2",
-      image: <img src={SneakersBox} />,
-      price: 49.9,
-    },
-    {
-      name: "Nome do produto 2",
-      image: <img src={SneakersBox} />,
-      price: 49.9,
-    },
-    {
-      name: "Nome do produto 2",
-      image: <img src={SneakersBox} />,
-      price: 49.9,
-    },
-    {
-      name: "Nome do produto 2",
-      image: <img src={SneakersBox} />,
-      price: 49.9,
-    },
-  ];
-  const response = ProductListing;
+  
+  const response = ProductListingArray;
   setProduto(response);
   console.log(response)
 }
+
  useEffect(() => {
    getProducts();
  }, []);
        
         return (
-          <div className=" d-flex flex-wrap container-xxl">
+          <div className=" d-flex flex-wrap container-xxl d-md-flex  ">
             {Product.map((item, index) => {
               if (index >= 8) {
                 // Quando chegar no nono produto, interrompe a renderização
