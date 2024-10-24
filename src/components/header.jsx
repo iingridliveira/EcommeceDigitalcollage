@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import search from "../assets/search.svg";
+import Search from "./search";
 
 
 const Header = () => {
@@ -20,7 +21,7 @@ const Header = () => {
                     <a href="#"><img src={search} alt="icone-de-pesquisa"/></a>
                 </span>
             </div>
-            
+            <Search/>
             <div>
                 <a className="color-red" href="#">Cadastre-se</a>
                 <button type="submit">Entrar</button>

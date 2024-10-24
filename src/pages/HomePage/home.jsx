@@ -13,6 +13,7 @@ import SectionOne from "../../components/SectionOne";
 const Home = () => {
   return (
     <>
+      {/*S*/}
       <Section id={""} cor={"bg-secondary  bg-opacity-10 "}>
         <Carousel
           slideUne={
@@ -84,7 +85,7 @@ const Home = () => {
       <SectionThree />
       <Section cor={"container-xxl"}>
         <div className=" container d-flex justify-content-between ">
-          <h4 className="bold-text">Produtos em alta</h4>
+          <h4 className="fw-bold">Produtos em alta</h4>
           <div className="d-flex mx-5">
             <p className="d-inline-block me-3" style={{ color: "#C92071" }}>
               Ver todos{" "}
@@ -98,12 +99,11 @@ const Home = () => {
         <main className="  container d-flex flex-column flex-md-row align-items-center justify-content-between ">
           {/* Div para a imagem com ordem 1 no mobile */}
           <div
-
             className=" order-0 ratio ratio-1x1 rounded-circle w-75  "
             style={{
               background:
                 "linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%, rgba(255, 255, 255, 0) 100%)",
-              }}
+            }}
           >
             <img className="" src={BlackSneakers} alt="Tênis preto" />
           </div>
@@ -111,7 +111,7 @@ const Home = () => {
           <div className="order-1 order-md-0 flex-wrap mt-3 mt-md-0 px-5 mx-5 my-5 w-100">
             <h5 style={{ color: "#F6AA1C" }}>Oferta especial</h5>
             <h1
-              className=" text-dark text-opacity-75"
+              className=" text-black text-opacity-75"
               style={{ fontSize: "60px" }}
             >
               Air Jordan edição de colecionador
