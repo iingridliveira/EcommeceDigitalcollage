@@ -73,13 +73,20 @@ footer{
   
 }
 
-$bg-secondary: (
-  "background": red
-);
+.btn-primary {
+  background-color: #C92071;
+  --bs-btn-border-color: #c92071;
+  --bs-btn-hover-color: #b21963;
+}
 
-$bs-nav-underline-link-active-color: (
-  "color": #c92071
-)
+.btn-primary:hover,
+.btn:hover{
+  color: #f5f5f5;
+  background-color:#b21963;
+  border-color: #b21963
+}
+
+
 
 
 

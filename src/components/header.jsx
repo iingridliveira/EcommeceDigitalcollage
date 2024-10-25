@@ -1,14 +1,16 @@
 import { NavLink } from "react-router-dom";
 import { SearchContext } from "../context";
 import { useContext } from "react";
+import  searchimg  from "../assets/search-img.svg"
+import carrinhoCompras from "../assets/carrinhoCompras.svg"
 
 
 const Header = () => {
   const { search, setSearch, filterProduct } =  useContext(SearchContext);
   return (
     <>
-      <main className="container d-flex-collumn">
-        <div className="d-flex w-max-content align-items-center gap-3">
+      <main className="container d-flex-collumn py-3">
+        <div className="d-flex w-max-content align-items-center gap-5">
           <div className="d-flex justify-content-center align-items-center gap-3 py-4">
             <img src="src/assets/logo.svg" />
             <h2
@@ -19,24 +21,28 @@ const Header = () => {
             </h2>
           </div>
 
-          <div className="input-group mb-3">
+          <div className="input-group">
             <input
               type="text"
-              className="form-control bg-body-tertiary border-right-0"
+              className="form-control bg-body-tertiary border-0 "
               placeholder="Pesquisar produto..."
               aria-label="Pesquisar-Produto"
               value={search}
               onChange={(ev) => setSearch(ev.target.value)}
             />
-            <button onClick={filterProduct}>img</button>
+              <button className="bg-white d-flex justify-content-center align-items-center border-0" onClick={filterProduct}><img src={searchimg} alt="logo-img" /></button>
+              
           </div>
 
-          <div>
-            <a className="color-red" href="#">
+          <div className="d-flex gap-4 justify-content-center align-items-center">
+            <a className="color-red text-nowrap" href="#">
               Cadastre-se
             </a>
-            <button type="submit">Entrar</button>
+            <button type="button" class="btn btn-primary btn-lg">Entrar</button>
           </div>
+          <div>
+            <img src={carrinhoCompras} alt="carrinho" /></div>           
+
         </div>
         <nav>
           <ul className="nav nav-underline text-primary">
