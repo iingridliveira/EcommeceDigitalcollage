@@ -16,27 +16,30 @@ const SectionThree = () => {
           <main className="container-xxl ">
             <div className="mb-5">
               <h3>Coleções em destaque</h3>
-            </div>
-            <div className="d-flex  mb-5 " >
-            <div style={{backgroundColor:'#D8E3F2'}}  >
-              <h5 style={{backgroundColor:'rgba(231, 255, 134, 1)'}}> 30% off</h5>
-            <Card1 nome={"Novo drop Supreme"} img={Shirt}/>
-            </div>
-            <div style={{backgroundColor:'#D8E3F2'}}  >
-              <h5 style={{backgroundColor:'rgba(231, 255, 134, 1)'}}>30% off</h5>
-            <Card1 nome={"Coleção Adidas"} img={Sneaker}/>
-            </div>
-            <div style={{backgroundColor:'#D8E3F2'}}  >
-              <h5 style={{backgroundColor:'rgba(231, 255, 134, 1)'}}>30% off</h5>
-            <Card1 nome={"Novo Beats Bass"} img={Headphone}/>
-            </div>
+              </div>
+               <div className="d-flex  mb-5 container" >
+               <div style={{backgroundColor:'#D8E3F2'}} className="d-inline-block me-3">
+               <h5 style={{backgroundColor:'rgba(231, 255, 134, 1)', margin:'20px', maxWidth:'190px', padding:'12px', borderRadius:'50px'}}> 30% off</h5>
+                <Card1 nome={"Novo drop Supreme"} img={Shirt}/>
+                <h5 style={{backgroundColor:'white', marginLeft:'40px', maxWidth:'90px', }}>Comprar</h5>
+              </div>
+              <div style={{backgroundColor:'#D8E3F2'}} className="d-inline-block me-3"  >
+              <h5 style={{backgroundColor:'rgba(231, 255, 134, 1)', margin:'20px', maxWidth:'190px', padding:'12px', borderRadius:'50px'}}>30% off</h5>
+                <Card1 nome={"Coleção Adidas"} img={Sneaker}/>
+                <h5 style={{backgroundColor:'white', marginLeft:'40px', maxWidth:'90px',}} >Comprar</h5>
+              </div>
+              <div style={{backgroundColor:'#D8E3F2'}} className="d-inline-block me-3" >
+              <h5 style={{backgroundColor:'rgba(231, 255, 134, 1)', margin:'20px', maxWidth:'190px', padding:'12px', borderRadius:'50px'}}>30% off</h5>
+                <Card1 nome={"Novo Beats Bass"} img={Headphone}/> 
+                <h5 style={{backgroundColor:'white', marginLeft:'40px', maxWidth:'90px', }}>Comprar</h5>
+              </div>
             </div>
             <div className=" d-flex flex-column  align-items-center justify-content-between">
               <div>
                 <h3>Coleções em destaque</h3>
               </div>
               <ul className="list-unstyled">
-                <li className="d-inline-block me-3       ">
+                <li className="d-inline-block me-3">
                   <Card2 photo={Shirts} text={"Camisetas"} />
                 </li>
                 <li className="d-inline-block me-3      ">

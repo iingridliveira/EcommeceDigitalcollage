@@ -7,6 +7,8 @@ const Promocard = ({nome, img}) => {
    
   export default Promocard;
 
+
+
   
 
 
