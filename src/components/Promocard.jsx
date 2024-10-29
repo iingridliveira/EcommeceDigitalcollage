@@ -8,7 +8,7 @@ const Promocard = ({nome, img}) => {
           <h1 style={{marginLeft:'40px', fontSize:'23px'}}>{nome}</h1>
           <h6 style={{backgroundColor:'white', marginLeft:'40px',maxWidth:'120px', color:'#C92071', borderRadius:'5px', padding:'10px', textAlign:'center'}}>Comprar</h6>
         </div>
-        <div style={{alignItems:'center'}}>
+        <div style={{}}>
           <img src={img}/>
         </div>
 
