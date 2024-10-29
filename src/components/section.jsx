@@ -3,7 +3,7 @@ const Section = ({id, children, cor}) => {
     return (
       <section
         id={id}
-        className={` h-75 py-5 ${cor}`}
+        className={` h-75 ${cor}`}
        
       >
         {children}
