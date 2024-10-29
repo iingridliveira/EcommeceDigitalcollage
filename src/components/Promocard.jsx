@@ -1,8 +1,22 @@
 const Promocard = ({nome, img}) => {
-    return ( <>
-      <h1>{nome}</h1>
-      <img src={img} alt=""/>
-    </>);
+    return ( <div style={{backgroundColor:'#D8E3F2', borderRadius:'10px', display:'flex'}}>
+     
+      
+
+        <div>
+          <h6 style={{backgroundColor:'rgba(231, 255, 134, 1)', marginLeft:'40px', maxWidth:'90px', padding:'5px', borderRadius:'50px', marginTop:'50px'}}>30% OFF</h6>
+          <h1 style={{marginLeft:'40px', fontSize:'25px'}}>{nome}</h1>
+          <h6 style={{backgroundColor:'white', marginLeft:'40px',maxWidth:'100px', color:'#C92071', borderRadius:'5px', padding:'10px'}}>Comprar</h6>
+        </div>
+        <div>
+          <img src={img}/>
+        </div>
+
+
+
+
+
+    </div>);
   }
    
   export default Promocard;
