@@ -14,19 +14,17 @@ const SectionThree = () => {
       <>
         <Section cor={""}>
           <main className="container-xxl ">
-            <div className="mb-5">
-              <h3>Coleções em destaque</h3>
-              </div>
+            <div className="mb-5 ">
+              <h3 style={{marginLeft:'40px'}}>Coleções em destaque</h3>
+            </div>
               
-               <div style={{ display:'flex', gap:'5px', marginBottom:'50px', }}>
+              <div style={{ display:'flex', gap:'10px', marginBottom:'50px', marginLeft:'40px', marginRight:'40px', }}>
                 <Promocard nome={"Novo drop Supreme"} img={Shirt}/>
                 <Promocard nome={"Coleção Adidas"} img={Sneaker}/>        
                 <Promocard nome={"Novo Beats Bass"} img={Headphone}/> 
               </div>
               
-            
-            
-            <div className=" d-flex flex-column  align-items-center justify-content-between">
+             <div className=" d-flex flex-column  align-items-center justify-content-between">
               <div>
                 <h3>Coleções em destaque</h3>
               </div>
