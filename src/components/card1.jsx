@@ -11,3 +11,4 @@ const Card1 = ({nome, img}) => {
 
 
 
+
