@@ -9,7 +9,7 @@ const SearchProvider = ({children}) => {
    const [ buttonseach, setButtonseach] = useState([])
 
 
-    const filterProduct = () => {
+      const filterProduct = () => {
       const response = ProductListingArray;
       const lowerSearch = search.toLowerCase();
       //setSearch(response);
