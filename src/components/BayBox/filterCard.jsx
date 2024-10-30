@@ -1,63 +1,67 @@
 import { useState } from "react";
 
 const FilterCard = () => {
-    
-    const [checkBoxvalue, setcheckBoxvalue]=useState(
-        {
-            option01: false,
-             option02: false,
-              option03: false,
-               option04: false,
-                option05: false
-        }
-    )
-    const handlecheckbox =(ev)=>{
-      const {name, checked}= ev.target
-      setcheckBoxvalue({
-          option01: name === "option01"? checked :checkBoxvalue.option01,
-          option02: name === "option02"? checked :checkBoxvalue.option02,
-          option03: name === "option03"? checked :checkBoxvalue.option03,
-          option04: name === "option04"? checked :checkBoxvalue.option04,
-          option05: name === "option05"? checked :checkBoxvalue.option05
-      });
-    }
-    
-    return (
-      <>
-        <form>
-          <input
-            type="checkbox"
-            name="option01"
-            checked={checkBoxvalue.option01}
-            onChange={handlecheckbox}
-          />
-          <input
-            type="checkbox"
-            name="option02"
-            checked={checkBoxvalue.option02}
-            onChange={handlecheckbox}
-          />
-          <input
-            type="checkbox"
-            name="option03"
-            checked={checkBoxvalue.option03}
-            onChange={handlecheckbox}
-          />
-          <input
-            type="checkbox"
-            name="option04"
-            checked={checkBoxvalue.option04}
-            onChange={handlecheckbox}
-          />
-          <input
-            type="checkbox"
-            name="option05"
-            checked={checkBoxvalue.option05}
-            onChange={handlecheckbox}
-          />
+  const [checkBoxvalue, setcheckBoxvalue] = useState({
+    Adiddas: false,
+    KSwiss: false,
+    Nike: false,
+    Calenciaga: false,
+    Puma: false,
+  });
+  const handlecheckbox = (ev) => {
+    const { name, checked } = ev.target;
+    setcheckBoxvalue((prevBrands) => {
+      const newBrands = checked
+        ? [...prevBrands, name] // Adiciona a marca se marcada
+        : prevBrands.filter((brand) => brand !== name); // Remove a marca se desmarcada
+      return newBrands;
+    });
+  };
+  return (
+    <>
+      <main className="d-flex flex-column flex-shrink-0 p-5 bg-white  " style={{width:"300px"}}>
+        <div className="border-bottom border-1 border-secondary border-opacity-50 ">
+          <p>Filtrar por</p>
+        </div>
+        <h6 className="pt-2"> Marca</h6>
+        <form className="form-check">
+          {Object.keys(checkBoxvalue).map((brand) => (
+            <div key={brand} className="d-flex py-2 ">
+              <input
+                className="d-inline-block  me-2 form-check-input"
+                type="checkbox"
+                name={brand}
+                checked={checkBoxvalue[brand]}
+                onChange={handlecheckbox}
+              />
+              <label className=" form-check-label">{brand}</label>
+            </div>
+          ))}
+          <div className="form-check">
+            <input
+              type="radio"
+              className="form-check-input"
+              id="radio1"
+              name="optradio"
+              value="option1"
+              checked
+            />
+            Option 1<label className="form-check-label"></label>
+          </div>
+          <div className="form-check">
+            <input
+              type="radio"
+              className="form-check-input"
+              id="radio2"
+              name="optradio"
+              value="option2"
+            />
+            Option 2<label className="form-check-label"></label>
+          </div>
         </form>
-      </>
-    );
-}
- 
+      </main>
+    </>
+  );
+};
+
 export default FilterCard;
