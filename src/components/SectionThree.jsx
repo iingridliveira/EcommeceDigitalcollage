@@ -9,7 +9,7 @@ import Headphone from "../assets/d9db11953a2d185d37246bb1f500c957 1.svg"
 import Sneaker from "../assets/ddd 1.svg"
 import Shirt from "../assets/star-wars-storm-trooper-supreme-shirts-supreme-t-shirt-snoopy-clothing-apparel-t-shirt-text-transparent-png-616696 1.svg"
 
-const SectionThree = ({name}) => {
+const SectionThree = () => {
     return (
       <>
         <Section cor={""}>

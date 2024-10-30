@@ -1,17 +1,17 @@
-import SearchProducts from "../../components/search";
+
+import FilterCard from "../../components/BayBox/filterCard";
+import SearchProducts from "../../components/search"
+
 
 
 
  const Product = () => {
+
   return (
     <>
-    <h1>
- 
-
- <SearchProducts/>
-
-    </h1>
-    </>
-  )
+    
+        <FilterCard/>
+        <SearchProducts />
+      </>  );
 }
   export default Product;
