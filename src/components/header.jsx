@@ -24,18 +24,25 @@ const Header = () => {
           <div className="input-group">
             <input
               type="text"
-              className="form-control bg-body-tertiary border-0 "
+              className="form-control bg-body-tertiary border-0 rounded"
               placeholder="Pesquisar produto..."
               aria-label="Pesquisar-Produto"
               value={search}
               onChange={(ev) => setSearch(ev.target.value)}
             />
-              <button className="bg-white d-flex justify-content-center align-items-center border-0" onClick={filterProduct}><img src={searchimg} alt="logo-img" /></button>
+            <span className="input-group-text bg-white border-0">
+              <img 
+                src={searchimg} 
+                alt="logo-img" 
+                style={{ width: '20px', height: '20px' }} 
+              />
+            </span>
+              {/* <button className="bg-white d-flex justify-content-center align-items-center border-0" onClick={filterProduct}><img src={searchimg} alt="logo-img" /></button> */}
               
           </div>
 
           <div className="d-flex gap-4 justify-content-center align-items-center">
-            <a className="color-red text-nowrap" href="#">
+            <a className="text-nowrap" href="#">
               Cadastre-se
             </a>
             <button type="button" class="btn btn-primary btn-lg">Entrar</button>

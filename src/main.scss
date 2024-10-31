@@ -3,10 +3,13 @@
 
 // Adicione suas customizações abaixo
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-:root {
- 
-  
-  color-scheme: light dark;
+:root,[data-bs-theme=light] {
+  --bs-link-color-rgb: #757575;
+  --bs-link-hover-color-rgb: #757575
+}
+
+.text-nowrap{
+  color: var(--bs-link-color-rgb);
 }
 
 
