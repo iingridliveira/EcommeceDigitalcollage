@@ -1,5 +1,5 @@
 
-import FilterCard from "../../components/BayBox/filterCard";
+
 import SearchProducts from "../../components/search"
 
 
@@ -31,14 +31,11 @@ import SearchProducts from "../../components/search"
             </select>
           </div>
         </div>
-        <div className=" d-flex flex-nowrap h-100 overflow-auto overflow-y-hidden">
-          <div className="">
-            <FilterCard />
-          </div>
-          <div className="">
+        
+
+          
             <SearchProducts />
-          </div>
-        </div>
+      
       </section>
     </>
   );

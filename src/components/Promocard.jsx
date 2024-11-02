@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 const Promocard = ({nome, img}) => {
     return ( <div style={{backgroundColor:'#D8E3F2', borderRadius:'10px', display:'flex' }}>
      
