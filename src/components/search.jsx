@@ -26,6 +26,7 @@ const SearchProducts = () => {
         <div className="d-flex flex-wrap container-xxl d-md-flex">
           {filteredProducts.map((product, index) => (
             <BuyBox
+             index={index}
               key={index}
               name={product.name}
               photo={product.image}
