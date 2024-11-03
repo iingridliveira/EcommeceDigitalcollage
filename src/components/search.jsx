@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect} from "react";
 import { SearchContext } from "../context";
-import BuyBox from "./BayBox/BuyBox";
 import FilterCard from "./BayBox/filterCard";
+import ProductCard from "./BayBox/ProductCard";
 
 const SearchProducts = () => {
   const { buttonseach } = useContext(SearchContext); // Dados do contexto
@@ -25,7 +25,7 @@ const SearchProducts = () => {
         </div>
         <div className="d-flex flex-wrap container-xxl d-md-flex">
           {filteredProducts.map((product, index) => (
-            <BuyBox
+            <ProductCard
              index={index}
               key={index}
               name={product.name}

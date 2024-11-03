@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import BuyBox from "./BayBox/BuyBox";
 import { ProductListingArray } from "./array";
+import ProductCard from "./BayBox/ProductCard";
 
 const ProductListing = () => { 
 const [Product, setProduto] = useState([]);
@@ -24,7 +24,7 @@ const getProducts = () =>{
               }
 
               return (
-                <BuyBox
+                <ProductCard
                   index={index}
                   key={index}
                   name={product.name}
