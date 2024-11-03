@@ -4,15 +4,21 @@ import { ProductListingArray } from "../../components/array";
 import BuyBox from "../../components/BayBox/BuyBox";
 
 const ProductcView = () => {
-  const { index } = useParams();
-const [produto, setProduto] = useState([{}]);
+  const index = useParams();
+  const [product, setProduct] = useState([]);
 
-  
   const getProduct = () => {
-    const response = ProductListingArray;
-    const productFound = response.filter((product, i) => i === parseInt(product,index)); 
+
     
-    setProduto(productFound);
+    const response = ProductListingArray;
+    const numero1 = parseInt(index.id, 10);
+    const productFound = response.slice(index)[numero1];
+
+    setProduct(productFound);
+    console.log(index);
+    console.log(productFound);
+    console.log(productFound + "  aa");
+    console.log(product + " bb");
   };
 
   useEffect(() => {
@@ -21,17 +27,13 @@ const [produto, setProduto] = useState([{}]);
 
   return (
     <>
-      {produto.find ? (
-        <BuyBox
-          key={index}
-          name={index}
-          photo={produto.image}
-          price={produto.price}
-          priceDiscount={produto.priceDiscount}
-        />
-      ) : (
-        <p>Produto não encontrado</p>
-      )}
+      <BuyBox
+        key={product}
+        name={product.name}
+        photo={product.image}
+        price={product.price}
+        priceDiscount={product.priceDiscount}
+      />
     </>
   );
 };
