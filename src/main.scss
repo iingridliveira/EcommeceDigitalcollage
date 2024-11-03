@@ -64,7 +64,12 @@ footer{
 
 
 }
-
+.form-check-input:checked {
+  background-color: #C92071;
+  border-color: #fd0de6;
+  width: 22px;
+  height: 22px;
+}
 .nav-underline .nav-link.active {
   --bs-nav-underline-link-active-color:#C92071;
   color: var(--bs-nav-underline-link-active-color);
