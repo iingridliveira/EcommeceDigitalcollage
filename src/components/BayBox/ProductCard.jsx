@@ -1,11 +1,12 @@
 import LinkProduct from "./Link";
 
 /* eslint-disable react/prop-types */
-const ProductCard = ({photo, price,name,priceDiscount, index}) => {
+const ProductCard = ({photo, price,name,priceDiscount, index, category}) => {
     return (
       <>
         <main className=" ">
           <LinkProduct index={index}>
+
             <div className="bg-white py-5  me-3 rounded-1 shadow-lg py-3 align-items-center">
               {photo}
             </div>
