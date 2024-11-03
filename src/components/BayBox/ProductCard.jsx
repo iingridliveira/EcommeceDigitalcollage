@@ -1,7 +1,7 @@
 import LinkProduct from "./Link";
 
 /* eslint-disable react/prop-types */
-const BuyBox = ({photo, price,name,priceDiscount, index}) => {
+const ProductCard = ({photo, price,name,priceDiscount, index}) => {
     return (
       <>
         <main className=" ">
@@ -23,4 +23,4 @@ const BuyBox = ({photo, price,name,priceDiscount, index}) => {
     );
 }
  
-export default BuyBox;
+export default ProductCard;

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ProductListingArray } from "../../components/array";
-import BuyBox from "../../components/BayBox/BuyBox";
+import ProductCard from "../../components/BayBox/ProductCard";
 
 const ProductcView = () => {
   const index = useParams();
@@ -9,7 +9,7 @@ const ProductcView = () => {
 
   const getProduct = () => {
 
-    
+
     const response = ProductListingArray;
     const numero1 = parseInt(index.id, 10);
     const productFound = response.slice(index)[numero1];
@@ -27,7 +27,7 @@ const ProductcView = () => {
 
   return (
     <>
-      <BuyBox
+      <ProductCard
         key={product}
         name={product.name}
         photo={product.image}

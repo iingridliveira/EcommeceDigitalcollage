@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import BuyBox from "./BayBox/BuyBox";
 import { ProductListingArray } from "./array";
+import ProductCard from "./BayBox/ProductCard";
 
 const ProductListing = () => { 
 const [Product, setProduto] = useState([]);
@@ -17,19 +17,20 @@ const getProducts = () =>{
        
         return (
           <div className=" d-flex flex-wrap container-xxl d-md-flex  ">
-            {Product.map((item, index) => {
-              if (index >= 8) {
+            {Product.map((product, index) => {
+              if (product >= 8) {
                 // Quando chegar no nono produto, interrompe a renderização
                 return null;
               }
 
               return (
-                <BuyBox
-                  key={item.index}
-                  name={item.name}
-                  photo={item.image}
-                  price={item.price}
-                  priceDiscount={item.priceDiscount}
+                <ProductCard
+                  index={index}
+                  key={index}
+                  name={product.name}
+                  photo={product.image}
+                  price={product.price}
+                  priceDiscount={product.priceDiscount}
                 />
               );
             })}
