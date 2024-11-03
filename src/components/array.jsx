@@ -2,6 +2,7 @@ import SneakersBox from "../assets/Layer 1aa 2.svg";
 
 const ProductListingArray = [
  {
+    category: "Esporte e lazer",
     name: "K-Swiss V1 - Masculino",
     brand: "KSwiss",
     gender: "Masculino",
@@ -10,6 +11,7 @@ const ProductListingArray = [
     priceDiscount: 149.9,
   },
   {
+    category: "Esporte e lazer",
     name: "Adiddas Run Pro - Feminino",
     brand: "Adiddas",
     gender: "Feminino",
@@ -17,6 +19,7 @@ const ProductListingArray = [
     price: 249.9,
   },
   {
+    category: "Casual",
     name: "Nike AirMax 2021 - Masculino",
     brand: "Nike",
     gender: "Masculino",
@@ -24,6 +27,7 @@ const ProductListingArray = [
     price: 299.9,
   },
   {
+    category: "Casual",
     name: "Puma Runner V2 - Feminino",
     brand: "Puma",
     gender: "Feminino",
@@ -31,7 +35,9 @@ const ProductListingArray = [
     price: 159.9,
   },
   {
-    name: "K-Swiss V1 - Masculino",
+
+    category: "Utilitário",
+    name: "KSwiss V1 - Masculino",
     brand: "KSwiss",
     gender: "Masculino",
     image: <img src={SneakersBox} alt="K-Swiss V1" />,
@@ -39,6 +45,7 @@ const ProductListingArray = [
     priceDiscount: 149.9,
   },
   {
+    category: "Utilitário",
     name: "Adiddas Run Pro - Feminino",
     brand: "Adiddas",
     gender: "Feminino",
@@ -46,6 +53,7 @@ const ProductListingArray = [
     price: 249.9,
   },
   {
+    category: "Corrida",
     name: "Nike AirMax 2021 - Masculino",
     brand: "Nike",
     gender: "Masculino",
@@ -53,6 +61,7 @@ const ProductListingArray = [
     price: 299.9,
   },
   {
+    category: "Corrida",
     name: "Puma Runner V2 - Feminino",
     brand: "Puma",
     gender: "Feminino",

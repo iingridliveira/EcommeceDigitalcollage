@@ -27,6 +27,7 @@ const getProducts = () =>{
                 <ProductCard
                   index={index}
                   key={index}
+                  category={product.category}
                   name={product.name}
                   photo={product.image}
                   price={product.price}
