@@ -31,7 +31,7 @@ const ProductListingArray = [
     price: 159.9,
   },
   {
-    name: "KSwiss V1 - Masculino",
+    name: "K-Swiss V1 - Masculino",
     brand: "KSwiss",
     gender: "Masculino",
     image: <img src={SneakersBox} alt="K-Swiss V1" />,

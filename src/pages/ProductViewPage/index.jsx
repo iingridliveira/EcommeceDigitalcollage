@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ProductListingArray } from "../../components/array";
-import ProductCard from "../../components/BayBox/ProductCard";
+import BuyBox from "../../components/BayBox/Buybox";
 
 const ProductcView = () => {
   const index = useParams();
@@ -27,13 +27,8 @@ const ProductcView = () => {
 
   return (
     <>
-      <ProductCard
-        key={product}
-        name={product.name}
-        photo={product.image}
-        price={product.price}
-        priceDiscount={product.priceDiscount}
-      />
+      <BuyBox key={product} name={product.name} price={product.price} priceDiscount={product.priceDiscount}/>
+     
     </>
   );
 };

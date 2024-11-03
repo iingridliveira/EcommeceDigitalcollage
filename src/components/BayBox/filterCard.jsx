@@ -7,7 +7,7 @@ import { useState } from "react";
 const FilterCard = ({ setSelectedBrands }) => {
   const [checkBoxValue, setCheckBoxValue] = useState({
     Adiddas: false,
-    KSwiss: false,
+    "K-Swiss": false,
     Nike: false,
     Calenciaga: false,
     Puma: false,
