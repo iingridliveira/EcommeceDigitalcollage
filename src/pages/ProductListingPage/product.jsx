@@ -4,12 +4,12 @@ import SearchProducts from "../../components/search"
 
 
 
-
  const Product = () => {
 
   return (
     <>
       <section className="container-xxl ">
+       
         <div className=" container d-flex justify-content-between py-5">
           <p className="fw-bold">Resultados para tenes </p>
           <div className="d-flex mx-5">
@@ -31,11 +31,8 @@ import SearchProducts from "../../components/search"
             </select>
           </div>
         </div>
-        
 
-          
-            <SearchProducts />
-      
+        <SearchProducts />
       </section>
     </>
   );

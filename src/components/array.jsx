@@ -35,6 +35,7 @@ const ProductListingArray = [
     price: 159.9,
   },
   {
+
     category: "Utilitário",
     name: "KSwiss V1 - Masculino",
     brand: "KSwiss",
