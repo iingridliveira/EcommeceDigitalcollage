@@ -30,14 +30,7 @@ const Header = () => {
               value={search}
               onChange={(ev) => setSearch(ev.target.value)}
             />
-            <span className="input-group-text bg-white border-0">
-              <img 
-                src={searchimg} 
-                alt="logo-img" 
-                style={{ width: '20px', height: '20px' }} 
-              />
-            </span>
-              {/* <button className="bg-white d-flex justify-content-center align-items-center border-0" onClick={filterProduct}><img src={searchimg} alt="logo-img" /></button> */}
+            <button className="bg-white d-flex justify-content-center align-items-center border-0" onClick={filterProduct}><img src={searchimg} alt="logo-img" /></button>
               
           </div>
 
