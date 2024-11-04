@@ -1,13 +1,14 @@
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 /* eslint-disable react/prop-types */
-const BuyBox = ({ name, priceDiscount, price }) => {
+const BuyBox = ({ name, priceDiscount, price, category }) => {
   return (
     <>
       <main className="">
         <h3>{name}</h3>
-        <p>Casual| {name}| REF:38416711</p>
+        <p>
+          {category}| {name}| REF:38416711
+        </p>
         <div className="">
           <ul className="list-unstyled ">
             <li className="d-inline-block me-3">

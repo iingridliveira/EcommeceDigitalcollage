@@ -8,8 +8,6 @@ const ProductcView = () => {
   const [product, setProduct] = useState([]);
 
   const getProduct = () => {
-
-
     const response = ProductListingArray;
     const numero1 = parseInt(index.id, 10);
     const productFound = response.slice(index)[numero1];
@@ -27,8 +25,13 @@ const ProductcView = () => {
 
   return (
     <>
-      <BuyBox key={product} name={product.name} price={product.price} priceDiscount={product.priceDiscount}/>
-     
+      <BuyBox
+        key={product}
+        category={product.category}
+        name={product.name}
+        price={product.price}
+        priceDiscount={product.priceDiscount}
+      />
     </>
   );
 };
