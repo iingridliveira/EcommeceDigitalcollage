@@ -6,7 +6,7 @@ const ProductCard = ({photo, price,name,priceDiscount, index, category}) => {
       <>
         <main className=" ">
           <LinkProduct index={index}>
-
+          {category}
             <div className="bg-white py-5  me-3 rounded-1 shadow-lg py-3 align-items-center">
               {photo}
             </div>
