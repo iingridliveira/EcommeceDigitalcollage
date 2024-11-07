@@ -1,48 +1,72 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+
 /* eslint-disable react/prop-types */
+import Star from "../../assets/Path.svg";
+import SmallStar from "../../assets/Star 1.svg";
+import { OptionCircle,OptionSquare } from "./ProductOptions";
+
 const BuyBox = ({ name, priceDiscount, price, category }) => {
   return (
     <>
-      <main className="">
-        <h3>{name}</h3>
+      <main style={{ width: "700px" }} className="py-5">
+        <h3 className="fw-bolder">{name}</h3>
         <p>
           {category}| {name}| REF:38416711
         </p>
-        <div className="">
-          <ul className="list-unstyled ">
+        <div className="d-flex">
+          <ul className="list-unstyled pt-2  ">
             <li className="d-inline-block me-3">
-              <FontAwesomeIcon className="" icon={faStar} />{" "}
+              <img src={Star} alt="" />
             </li>
             <li className="d-inline-block me-3">
-              <FontAwesomeIcon className="" icon={faStar} />{" "}
+              <img src={Star} alt="" />
             </li>
             <li className="d-inline-block me-3">
-              <FontAwesomeIcon className="" icon={faStar} />{" "}
+              <img src={Star} alt="" />
             </li>
+
             <li className="d-inline-block me-3">
-              <FontAwesomeIcon className="" icon={faStar} />{" "}
+              <img src={Star} alt="" />
             </li>
           </ul>
 
-          <h6>
-            4.7 <FontAwesomeIcon icon={faStar} />{" "}
-          </h6>
-          <p>(90 avaliações)</p>
+          <div className="d-flex align-items-center   ">
+            <h6
+              style={{ background: "#F6AA1C" }}
+              className=" px-3  py-2 rounded text-white fw-bolder "
+            >
+              4,7 <img className="px-2 w-" src={SmallStar} />
+            </h6>
+
+            <h6 className="pt-3 px-3 d-inline-block me-3 opacity-75">
+              (90 avaliações)
+            </h6>
+          </div>
         </div>
-        <div className="">
+        <div className="d-flex">
           {" "}
-          <h3>R${price}</h3>
-          <p>{priceDiscount}</p>
+          <h2 className="fw-bolder ">R${price}</h2>
+          <p className="pt-2 text-decoration-line-through  me-3 opacity-25">
+            {priceDiscount}
+          </p>
         </div>
-        <article className="">
-          <h4>Descrição do produto</h4>
-          <p>
+        <article className="w-75">
+          <h6 className="fw-bolder opacity-50">Descrição do produto</h6>
+          <p className="text-black opacity-75">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco.
           </p>
         </article>
+        <div className="py-3">
+          <OptionSquare />
+          <OptionCircle />
+        </div>
+        <button
+          style={{ background: "#F6AA1C" }}
+          className=" btn custom-btn px-5  py-2 rounded text-white fw-bolder "
+        >
+          COMPRAR
+        </button>
       </main>
     </>
   );

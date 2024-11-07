@@ -25,13 +25,24 @@ const ProductcView = () => {
 
   return (
     <>
-      <BuyBox
-        key={product}
-        category={product.category}
-        name={product.name}
-        price={product.price}
-        priceDiscount={product.priceDiscount}
-      />
+      <section className="container-xxl ">
+      <div className="d-flex flex-nowrap h-100 overflow-auto overflow-y-hidden">
+        <div>
+         {/* GALERY AQUI*/ }
+         AAA
+        </div>
+        <div className="d-flex flex-wrap container-xxl d-md-flex">
+          <BuyBox
+            key={product}
+            category={product.category}
+            name={product.name}
+            price={product.price}
+            priceDiscount={product.priceDiscount}
+          />
+        
+        </div>
+      </div>
+      </section>
     </>
   );
 };
