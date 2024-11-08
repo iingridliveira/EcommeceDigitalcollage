@@ -1,4 +1,3 @@
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import Section from "../../components/section";
 import WhiteSneakers from "../../assets/White-Sneakers-PNG-Clipart.svg";
@@ -9,7 +8,6 @@ import Arrow from "../../assets/Right 24px.svg";
 import Carousel from "../../components/Carousel";
 import SectionOne from "../../components/SectionOne";
 
-
 const Home = () => {
   return (
     <>
@@ -19,10 +17,7 @@ const Home = () => {
           slideUne={
             <SectionOne
               title={
-                <h1
-                  style={{ fontSize: "80px", lineHeight: "70px" }}
-                  className=""
-                >
+                <h1 style={{ fontSize: "80px" }} className="">
                   Queima de estoque Nike🔥
                 </h1>
               }
@@ -38,10 +33,7 @@ const Home = () => {
           slideT={
             <SectionOne
               title={
-                <h1
-                  style={{ fontSize: "80px", lineHeight: "70px" }}
-                  className=""
-                >
+                <h1 style={{ fontSize: "80px" }} className="">
                   O melhor é só aqui😍
                 </h1>
               }
@@ -57,10 +49,7 @@ const Home = () => {
           slide3={
             <SectionOne
               title={
-                <h1
-                  style={{ fontSize: "80px", lineHeight: "70px" }}
-                  className=""
-                >
+                <h1 style={{ fontSize: "80px" }} className="">
                   Tá no pé, tá na moda😎
                 </h1>
               }
@@ -76,10 +65,7 @@ const Home = () => {
           slide4={
             <SectionOne
               title={
-                <h1
-                  style={{ fontSize: "80px", lineHeight: "70px" }}
-                  className=""
-                >
+                <h1 style={{ fontSize: "80px" }} className="">
                   Vem que tá bombamdo 💣
                 </h1>
               }
@@ -96,13 +82,10 @@ const Home = () => {
       </Section>
       <SectionThree />
       <Section cor={"container-xxl"}>
-        <div className="  d-flex justify-content-between py-5 ">
+        <div className=" container d-flex justify-content-between ">
           <h4 className="fw-bold">Produtos em alta</h4>
           <div className="d-flex mx-5">
-            <p
-              className="d-inline-block me-3 icon-link icon-link-hover"
-              style={{ color: "#C92071" }}
-            >
+            <p className="d-inline-block me-3" style={{ color: "#C92071" }}>
               Ver todos{" "}
             </p>
             <img className="d-inline-block me-3 mb-3 " src={Arrow} />
@@ -111,7 +94,7 @@ const Home = () => {
         <ProductListing />
       </Section>
       <Section cor={"bg-white"}>
-        <main className="  container d-flex flex-column flex-md-row align-items-center justify-content-between pt-5 ">
+        <main className="  container d-flex flex-column flex-md-row align-items-center justify-content-between ">
           {/* Div para a imagem com ordem 1 no mobile */}
           <div
             className=" order-0 ratio ratio-1x1 rounded-circle w-75  "
@@ -137,7 +120,10 @@ const Home = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip
             </p>
-            <button className=" text-white px-5 py-2  border-0 rounded btn-primary btn-lg fw-bold">
+            <button
+              className=" text-white px-5 py-2  border-0 rounded fw-bold"
+              style={{ background: "#C92071" }}
+            >
               Ver Ofertas
             </button>
           </div>
