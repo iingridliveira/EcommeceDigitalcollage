@@ -8,9 +8,9 @@ const Card2 = ({photo, text}) => {
           <img className="" src={photo} />
         </div>
       </main>
-      <h4 className="d-flex flex-column  align-items-center justify-content-between">
+      <h6 className="d-flex flex-column  align-items-center justify-content-between">
         {text}
-      </h4>
+      </h6>
     </>
   );
 };

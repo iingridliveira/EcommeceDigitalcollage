@@ -12,40 +12,52 @@ import Shirt from "../assets/star-wars-storm-trooper-supreme-shirts-supreme-t-sh
 const SectionThree = () => {
     return (
       <>
-        <Section cor={""}>
-          <main className="container-xxl ">
+        <Section cor={"container-xxl"}>
+          <main className=" py-5 ">
             <div className="mb-5 ">
-              <h3 style={{marginLeft:'40px'}}>Coleções em destaque</h3>
+              <h4
+                style={{ marginLeft: "40px" }}
+                className="fw-bolder opacity-75"
+              >
+                Coleções em destaque
+              </h4>
             </div>
-              
-              <div style={{ display:'flex', gap:'10px', marginBottom:'50px', marginLeft:'40px', marginRight:'40px', }}>
-                <Promocard nome={"Novo drop Supreme"} img={Shirt}/>
-                <Promocard nome={"Coleção Adidas"} img={Sneaker}/>        
-                <Promocard nome={"Novo Beats Bass"} img={Headphone}/> 
-              </div>
-              
-             <div className=" d-flex flex-column  align-items-center justify-content-between">
+
+            <div
+              style={{
+                display: "flex",
+                gap: "10px",
+                marginBottom: "50px",
+                marginLeft: "40px",
+                marginRight: "40px",
+              }}
+            >
+              <Promocard nome={"Novo drop Supreme"} img={Shirt} />
+              <Promocard nome={"Coleção Adidas"} img={Sneaker} />
+              <Promocard nome={"Novo Beats Bass"} img={Headphone} />
+            </div>
+
+            <div className=" d-flex flex-column  align-items-center justify-content-between">
               <div>
-                <h3>Coleções em destaque</h3>
+                <h4 className="fw-bolder opacity-75">Coleções em destaque</h4>
               </div>
               <ul className="list-unstyled">
-                <li className="d-inline-block me-3">
+                <li className="d-inline-block ">
                   <Card2 photo={Shirts} text={"Camisetas"} />
                 </li>
-                <li className="d-inline-block me-3      ">
+                <li className="d-inline-block     ">
                   <Card2 photo={Pants} text={"Calças"} />
                 </li>
-                <li className="d-inline-block me-3      ">
+                <li className="d-inline-block     ">
                   <Card2 photo={Pants} text={"Bonés"} />
                 </li>
-                <li className="d-inline-block me-3       ">
+                <li className="d-inline-block        ">
                   <Card2 photo={Phones} text={"Headphones"} />
                 </li>
                 <li className="d-inline-block me-3  ">
                   <Card2 photo={Sneakers} text={"Tênes"} />
                 </li>
               </ul>
-             
             </div>
           </main>
         </Section>

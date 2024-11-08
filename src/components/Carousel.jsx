@@ -2,8 +2,8 @@
 // eslint-disable-next-line react/prop-types
 const Carousel = ({slideUne, slideT, slide3, slide4}) => {
     return (
-      <div id="carouselExampleDark" className="carousel  slide">
-        <div className="carousel-indicators mt-5 w-75">
+      <div id="carouselExampleDark" className="carousel  slide ">
+        <div className="carousel-indicators mt-5 w-75  ">
           <button
             type="button"
             data-bs-target="#carouselExampleDark"
