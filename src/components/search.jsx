@@ -15,10 +15,10 @@ const SearchProducts = () => {
   const filteredProducts = buttonseach.filter(
     (product) =>
       selectedBrands.length === 0 || // Exibe todos se nenhuma marca estiver selecionada
-      selectedBrands.includes(product.name.split(" ")[0]) || // Filtra pela primeira palavra do nome
+      selectedBrands.includes(product.brand) || // Filtra pela primeira palavra do nome
       selectCategory.includes(product.category) ||
       selectGender.includes(product.gender)
-    );
+  );
     console.log(filteredProducts)
    useEffect(() => {
      filteredProducts
