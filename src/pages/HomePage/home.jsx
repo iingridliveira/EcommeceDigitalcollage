@@ -101,7 +101,7 @@ const Home = () => {
           <div className="d-flex mx-5">
             <p
               className="d-inline-block me-3 icon-link icon-link-hover"
-              style={{ color: "#C92071"  }}
+              style={{ color: "#C92071" }}
             >
               Ver todos{" "}
             </p>

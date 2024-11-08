@@ -12,11 +12,11 @@ import Shirt from "../assets/star-wars-storm-trooper-supreme-shirts-supreme-t-sh
 const SectionThree = () => {
     return (
       <>
-        <Section cor={"container-xxl"}>
-          <main className=" py-5 ">
+        <Section cor={""}>
+          <main className=" container-xxl py-5 ">
             <div className="mb-5 ">
               <h4
-                style={{ marginLeft: "40px" }}
+                
                 className="fw-bolder opacity-75"
               >
                 Coleções em destaque
@@ -28,7 +28,7 @@ const SectionThree = () => {
                 display: "flex",
                 gap: "10px",
                 marginBottom: "50px",
-                marginLeft: "40px",
+              
                 marginRight: "40px",
               }}
             >
