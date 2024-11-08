@@ -96,10 +96,13 @@ const Home = () => {
       </Section>
       <SectionThree />
       <Section cor={"container-xxl"}>
-        <div className=" container d-flex justify-content-between py-5 ">
+        <div className="  d-flex justify-content-between py-5 ">
           <h4 className="fw-bold">Produtos em alta</h4>
           <div className="d-flex mx-5">
-            <p className="d-inline-block me-3" style={{ color: "#C92071" }}>
+            <p
+              className="d-inline-block me-3 icon-link icon-link-hover"
+              style={{ color: "#C92071"  }}
+            >
               Ver todos{" "}
             </p>
             <img className="d-inline-block me-3 mb-3 " src={Arrow} />
@@ -108,7 +111,6 @@ const Home = () => {
         <ProductListing />
       </Section>
       <Section cor={"bg-white"}>
-     
         <main className="  container d-flex flex-column flex-md-row align-items-center justify-content-between pt-5 ">
           {/* Div para a imagem com ordem 1 no mobile */}
           <div
@@ -135,10 +137,7 @@ const Home = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip
             </p>
-            <button
-              className=" text-white px-5 py-2  border-0 rounded fw-bold"
-              style={{ background: "#C92071" }}
-            >
+            <button className=" text-white px-5 py-2  border-0 rounded btn-primary btn-lg fw-bold">
               Ver Ofertas
             </button>
           </div>
