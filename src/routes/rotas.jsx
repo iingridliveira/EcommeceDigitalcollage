@@ -10,7 +10,7 @@ import ProductcView from '../pages/ProductViewPage';
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/produtos" element={<Product />} />
+      <Route path="/product" element={<Product />} />
       <Route path='/product/:id' element ={<ProductcView/>}/>
 
     </Routes>
