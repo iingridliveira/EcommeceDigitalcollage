@@ -7,6 +7,7 @@ import ProductListing from "../../components/ProductListing";
 import Arrow from "../../assets/Right 24px.svg";
 import Carousel from "../../components/Carousel";
 import SectionOne from "../../components/SectionOne";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -81,12 +82,15 @@ const Home = () => {
         />
       </Section>
       <SectionThree />
-      <Section cor={"container-xxl"}>
-        <div className=" container d-flex justify-content-between ">
+      <Section cor={"container-xxl  py-5 "}>
+        <div className=" d-flex justify-content-between">
           <h4 className="fw-bold">Produtos em alta</h4>
           <div className="d-flex mx-5">
             <p className="d-inline-block me-3" style={{ color: "#C92071" }}>
-              Ver todos{" "}
+              <Link className="text-decoration-none" to={"/product"}>
+                {" "}
+                Ver todos{" "}
+              </Link>
             </p>
             <img className="d-inline-block me-3 mb-3 " src={Arrow} />
           </div>
@@ -94,7 +98,7 @@ const Home = () => {
         <ProductListing />
       </Section>
       <Section cor={"bg-white"}>
-        <main className="  container d-flex flex-column flex-md-row align-items-center justify-content-between ">
+        <main className="  container d-flex flex-column flex-md-row align-items-center justify-content-between py-5">
           {/* Div para a imagem com ordem 1 no mobile */}
           <div
             className=" order-0 ratio ratio-1x1 rounded-circle w-75  "

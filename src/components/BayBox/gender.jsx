@@ -1,59 +1,53 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 
-
-// Importando a imagem (certifique-se de que a variável SneakersBox está definida corretamente)
-
-// Componente de filtro K-Swiss
+// Componente de filtro de gênero
 const GenderCard = ({ setSelectedGender }) => {
   const [checkBoxValue, setCheckBoxValue] = useState({
-    "Masculino": false,
-    "Feminino": false,
-    "Unisex": false,
+    Masculino: false,
+    Feminino: false,
+    Unisex: false,
   });
 
   const handleCheckboxChange = (ev) => {
-    const { gender, checked } = ev.target;
+    const { name, checked } = ev.target;
 
     setCheckBoxValue((prevState) => ({
       ...prevState,
-      [gender]: checked,
+      [name]: checked,
     }));
 
-    // Atualiza as marcas selecionadas no pai
-    setSelectedGender((prevBrands) => {
-      const newBrands = checked
-        ? [...prevBrands, gender] // Adiciona o gênero se marcado
-        : prevBrands.filter((brand) => brand !== gender); // Remove o gênero se desmarcado
-      return newBrands;
+    // Atualiza os gêneros selecionados no componente pai
+    setSelectedGender((prevGenders) => {
+      const newGenders = checked
+        ? [...prevGenders, name] // Adiciona o gênero se marcado
+        : prevGenders.filter((gender) => gender !== name); // Remove o gênero se desmarcado
+      return newGenders;
     });
   };
 
   return (
     <main
-      className="d-flex flex-column flex-shrink-0 p-5 bg-white  "
+      className="d-flex flex-column flex-shrink-0 p-5 bg-white"
       style={{ width: "300px" }}
     >
-      
-      <h6 className="pt-2"> Gênero</h6>
+      <h6 className="pt-2">Gênero</h6>
       <form className="form-check">
-        {Object.keys(checkBoxValue).map((brand) => (
-          <div key={brand} className="d-flex py-2 ">
+        {Object.keys(checkBoxValue).map((gender) => (
+          <div key={gender} className="d-flex py-2">
             <input
-              className="d-inline-block  me-2 form-check-input"
+              className="d-inline-block me-2 form-check-input"
               type="checkbox"
-              name={brand}
-              checked={checkBoxValue[brand]}
+              name={gender}
+              checked={checkBoxValue[gender]}
               onChange={handleCheckboxChange}
             />
-            <label className=" form-check-label">{brand}</label>
+            <label className="form-check-label">{gender}</label>
           </div>
         ))}
-       
       </form>
     </main>
   );
 };
 
-// Componente principal que exibe os produtos
 export default GenderCard;

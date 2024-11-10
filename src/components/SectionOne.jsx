@@ -6,7 +6,7 @@ const SectionOne = ({ title, img }) => {
   return (
     <>
       <Section id={""} cor={""}>
-        <main className="  container-xxl  d-flex flex-column flex-md-row align-items-center justify-content-between ">
+        <main className="  container-xxl  d-flex flex-column flex-md-row align-items-center justify-content-between py-5">
           {/* Div para o texto e botão */}
           {/* Div para o texto e botão */}
           <div className="order-1 order-md-0 flex-wrap mt-3 mt-md-0   ">
@@ -34,8 +34,8 @@ const SectionOne = ({ title, img }) => {
           </div>
           <img className=" order-0 ml-0" src={orangeBoll} />
         </main>
-        <div className="m-5"></div>
       </Section>
+      <div className="m-5"></div>
     </>
   );
 };

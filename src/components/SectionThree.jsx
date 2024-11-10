@@ -13,9 +13,9 @@ const SectionThree = () => {
   return (
     <>
       <Section cor={""}>
-        <main className="container-xxl ">
+        <main className="container-xxl py-5 ">
           <div className="mb-5 ">
-            <h3 style={{ marginLeft: "40px" }}>Coleções em destaque</h3>
+            <h4 className="fw-bolder opacity-75">Coleções em destaque</h4>
           </div>
 
           <div
@@ -23,7 +23,7 @@ const SectionThree = () => {
               display: "flex",
               gap: "10px",
               marginBottom: "50px",
-              marginLeft: "40px",
+
               marginRight: "40px",
             }}
           >
@@ -34,25 +34,27 @@ const SectionThree = () => {
 
           <div className=" d-flex flex-column  align-items-center justify-content-between">
             <div>
-              <h3>Coleções em destaque</h3>
+              <h4 className="fw-bolder opacity-75 ">Coleções em destaque</h4>
             </div>
-            <ul className="list-unstyled">
-              <li className="d-inline-block me-3">
-                <Card2 photo={Shirts} text={"Camisetas"} />
-              </li>
-              <li className="d-inline-block me-3      ">
-                <Card2 photo={Pants} text={"Calças"} />
-              </li>
-              <li className="d-inline-block me-3      ">
-                <Card2 photo={Pants} text={"Bonés"} />
-              </li>
-              <li className="d-inline-block me-3       ">
-                <Card2 photo={Phones} text={"Headphones"} />
-              </li>
-              <li className="d-inline-block me-3  ">
-                <Card2 photo={Sneakers} text={"Tênes"} />
-              </li>
-            </ul>
+            <div className=" " role="group">
+              <ul className="list-unstyled btn-group d-flex flex-nowrap">
+                <li className="  ">
+                  <Card2 photo={Shirts} text={"Camisetas"} />
+                </li>
+                <li className="   ">
+                  <Card2 photo={Pants} text={"Calças"} />
+                </li>
+                <li className="   ">
+                  <Card2 photo={Pants} text={"Bonés"} />
+                </li>
+                <li className="       ">
+                  <Card2 photo={Phones} text={"Headphones"} />
+                </li>
+                <li className="  ">
+                  <Card2 photo={Sneakers} text={"Tênes"} />
+                </li>
+              </ul>
+            </div>
           </div>
         </main>
       </Section>

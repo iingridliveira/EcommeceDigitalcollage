@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect} from "react";
+import { useContext, useState } from "react";
 import { SearchContext } from "../context";
 import FilterCard from "./BayBox/filterCard";
 import ProductCard from "./BayBox/ProductCard";
@@ -8,36 +8,32 @@ import GenderCard from "./BayBox/gender";
 const SearchProducts = () => {
   const { buttonseach } = useContext(SearchContext); // Dados do contexto
   const [selectedBrands, setSelectedBrands] = useState([]);
-  const [selectCategory, setSelectedCategory] = useState([]);
-  const [selectGender, setSelectedGender] = useState([]);
- 
-  // Filtra os produtos de acordo com as marcas selecionadas
+  const [selectedCategory, setSelectedCategory] = useState([]);
+  const [selectedGender, setSelectedGender] = useState([]);
+
+  // Filtra os produtos de acordo com os filtros selecionados
   const filteredProducts = buttonseach.filter(
     (product) =>
-      selectedBrands.length === 0 || // Exibe todos se nenhuma marca estiver selecionada
-      selectedBrands.includes(product.brand) || // Filtra pela primeira palavra do nome
-      selectCategory.includes(product.category) ||
-      selectGender.includes(product.gender)
+      (selectedBrands.length === 0 || selectedBrands.includes(product.brand)) &&
+      (selectedCategory.length === 0 ||
+        selectedCategory.includes(product.category)) &&
+      (selectedGender.length === 0 || selectedGender.includes(product.gender))
   );
-    console.log(filteredProducts)
-   useEffect(() => {
-     filteredProducts
-   }, []);
+
   return (
     <>
       <div className="d-flex flex-nowrap h-100 overflow-auto overflow-y-hidden">
         <div>
-          <FilterCard setSelectedBrands={setSelectedBrands} />{" "}
+          {/* Componentes de filtros */}
+          <FilterCard setSelectedBrands={setSelectedBrands} />
           <CategoryCard setSelectedCategory={setSelectedCategory} />
           <GenderCard setSelectedGender={setSelectedGender} />
-
-          {/* Componente para selecionar marcas */}
         </div>
         <div className="d-flex flex-wrap container-xxl d-md-flex">
           {filteredProducts.map((product, index) => (
             <ProductCard
-             index={index}
-              key={index}
+              key={product.id || index} // Use um identificador único se disponível
+              index={index}
               name={product.name}
               photo={product.image}
               price={product.price}
