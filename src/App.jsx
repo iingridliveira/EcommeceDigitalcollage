@@ -1,18 +1,13 @@
+import "./App.css";
+import Rotas from "./routes/rotas";
+import Layout from "./components/layouts";
 
-import './App.css'
-import Rotas from './routes/rotas';
-import Layout from './components/layouts'
-
-function App() {
- 
-
+const App = () => {
   return (
-    
     <Layout>
-      <Rotas/>
+      <Rotas />
     </Layout>
-    
   );
-}
+};
 
-export default App
+export default App;

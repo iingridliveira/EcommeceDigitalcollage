@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { SearchContext } from "../context";
 import { useContext } from "react";
 import Logo from "../assets/logo.svg";
@@ -31,12 +31,14 @@ const Header = () => {
               value={search}
               onChange={(ev) => setSearch(ev.target.value)}
             />
-            <button
-              className="bg-body-tertiary btn btn-outline-secondary d-flex justify-content-center align-items-center border-0"
-              onClick={filterProduct}
-            >
-              <img src={searchimg} alt="logo-img" />
-            </button>
+            <Link to="/product" className="d-inline-flex">
+              <button
+                className="bg-body-tertiary btn btn-outline-secondary d-flex justify-content-center align-items-center border-0"
+                onClick={filterProduct}
+              >
+                <img src={searchimg} alt="logo-img" />
+              </button>
+            </Link>
           </div>
 
           <div className="d-flex gap-4 justify-content-center align-items-center">

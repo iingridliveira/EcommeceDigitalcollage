@@ -1,10 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 
-
-// Importando a imagem (certifique-se de que a variável SneakersBox está definida corretamente)
-
-// Componente de filtro K-Swiss
+// Componente de filtro de categorias
 const CategoryCard = ({ setSelectedCategory }) => {
   const [checkBoxValue, setCheckBoxValue] = useState({
     "Esporte e lazer": false,
@@ -14,47 +11,44 @@ const CategoryCard = ({ setSelectedCategory }) => {
   });
 
   const handleCheckboxChange = (ev) => {
-    const { category, checked } = ev.target;
+    const { name, checked } = ev.target;
 
     setCheckBoxValue((prevState) => ({
       ...prevState,
-      [category]: checked,
+      [name]: checked,
     }));
 
-    // Atualiza as marcas selecionadas no pai
-    setSelectedCategory((prevBrands) => {
-      const newBrands = checked
-        ? [...prevBrands, category] // Adiciona a marca se marcada
-        : prevBrands.filter((brand) => brand !== category); // Remove a marca se desmarcada
-      return newBrands;
+    // Atualiza as categorias selecionadas no pai
+    setSelectedCategory((prevCategories) => {
+      const newCategories = checked
+        ? [...prevCategories, name] // Adiciona a categoria se marcada
+        : prevCategories.filter((category) => category !== name); // Remove a categoria se desmarcada
+      return newCategories;
     });
   };
 
   return (
     <main
-      className="d-flex flex-column flex-shrink-0 p-5 bg-white  "
+      className="d-flex flex-column flex-shrink-0 p-5 bg-white"
       style={{ width: "300px" }}
     >
-      
-      <h6 className="pt-2"> Categoria</h6>
+      <h6 className="pt-2">Categoria</h6>
       <form className="form-check">
-        {Object.keys(checkBoxValue).map((brand) => (
-          <div key={brand} className="d-flex py-2 ">
+        {Object.keys(checkBoxValue).map((category) => (
+          <div key={category} className="d-flex py-2">
             <input
-              className="d-inline-block  me-2 form-check-input"
+              className="d-inline-block me-2 form-check-input"
               type="checkbox"
-              name={brand}
-              checked={checkBoxValue[brand]}
+              name={category}
+              checked={checkBoxValue[category]}
               onChange={handleCheckboxChange}
             />
-            <label className=" form-check-label">{brand}</label>
+            <label className="form-check-label">{category}</label>
           </div>
         ))}
-       
       </form>
     </main>
   );
 };
 
-// Componente principal que exibe os produtos
 export default CategoryCard;
