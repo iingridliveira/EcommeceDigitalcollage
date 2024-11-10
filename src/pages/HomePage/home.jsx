@@ -17,15 +17,14 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-    
       {/*S*/}
       <Section id={""} cor={"bg-secondary  bg-opacity-10 "}>
         <Carousel
           slideUne={
             <SectionOne
               title={
-                <h1 style={{ fontSize: "80px" }} className="">
-                  Queima de estoque Nike🔥
+                <h1 style={{ fontSize: "80px" }} className="lh-1">
+                  Queima de stoque Nike🔥
                 </h1>
               }
               img={
@@ -40,7 +39,7 @@ const Home = () => {
           slideT={
             <SectionOne
               title={
-                <h1 style={{ fontSize: "80px" }} className="">
+                <h1 style={{ fontSize: "80px" }} className="lh-1">
                   O melhor é só aqui😍
                 </h1>
               }
@@ -56,7 +55,7 @@ const Home = () => {
           slide3={
             <SectionOne
               title={
-                <h1 style={{ fontSize: "80px" }} className="">
+                <h1 style={{ fontSize: "80px" }} className="lh-1">
                   Tá no pé, tá na moda😎
                 </h1>
               }
@@ -72,7 +71,7 @@ const Home = () => {
           slide4={
             <SectionOne
               title={
-                <h1 style={{ fontSize: "80px" }} className="">
+                <h1 style={{ fontSize: "80px" }} className="lh-1">
                   Vem que tá bombamdo 💣
                 </h1>
               }
@@ -88,7 +87,7 @@ const Home = () => {
         />
       </Section>
       <SectionThree />
-      <Section cor={"container-xxl  py-5 "}>
+      <Section cor={"container-xxl   "}>
         <div className=" d-flex justify-content-between">
           <h4 className="fw-bold">Produtos em alta</h4>
           <div className="d-flex mx-5">
@@ -119,7 +118,7 @@ const Home = () => {
           <div className="order-1 order-md-0 flex-wrap mt-3 mt-md-0 px-5 mx-5 my-5 w-100">
             <h5 style={{ color: "#F6AA1C" }}>Oferta especial</h5>
             <h1
-              className=" text-black text-opacity-75"
+              className=" text-black text-opacity-75 lh-1"
               style={{ fontSize: "60px" }}
             >
               Air Jordan edição de colecionador
