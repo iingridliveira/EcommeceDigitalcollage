@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
-import { SearchContext } from "../context";
-import FilterCard from "./BayBox/filterCard";
-import ProductCard from "./BayBox/ProductCard";
-import CategoryCard from "./BayBox/categoryCard";
-import GenderCard from "./BayBox/gender";
+import { SearchContext } from "../../context";
+import FilterCard from "../FilterGroup/filterCard";
+import ProductCard from "../ProductCard/ProductCard";
+import CategoryCard from "../FilterGroup/categoryCard";
+import GenderCard from "../FilterGroup/gender";
 
 const SearchProducts = () => {
   const { buttonseach } = useContext(SearchContext); // Dados do contexto

@@ -1,6 +1,7 @@
+import SearchProducts from "../../components/ProductDetails/search";
 
 
-import SearchProducts from "../../components/search"
+
 
 
 
@@ -32,7 +33,7 @@ import SearchProducts from "../../components/search"
           </div>
         </div>
 
-        <SearchProducts />
+      <SearchProducts/>
       </section>
     </>
   );

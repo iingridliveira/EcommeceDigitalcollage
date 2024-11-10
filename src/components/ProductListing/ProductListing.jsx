@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { ProductListingArray } from "./array";
-import ProductCard from "./BayBox/ProductCard";
+import ProductCard from "../ProductCard/ProductCard";
+import { ProductListingArray } from "./../array";
 
 const ProductListing = () => { 
 const [Product, setProduto] = useState([]);

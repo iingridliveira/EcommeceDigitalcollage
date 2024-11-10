@@ -1,6 +1,6 @@
 import Section from "./section";
 
-import orangeBoll from "../assets/Ornament 11.svg";
+import orangeBoll from "../../assets/Ornament 11.svg";
 // eslint-disable-next-line react/prop-types
 const SectionOne = ({ title, img }) => {
   return (

@@ -1,17 +1,23 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Section from "../../components/section";
+import Section from "../../components/Section/section";
+import SectionOne from "../../components/Section/SectionOne";
+import SectionThree from "../../components/Section/SectionThree";
+import Carousel from "../../components/Section/Carousel";
 import WhiteSneakers from "../../assets/White-Sneakers-PNG-Clipart.svg";
 import BlackSneakers from "../../assets/Laye 1.svg";
-import SectionThree from "../../components/SectionThree";
-import ProductListing from "../../components/ProductListing";
+
+import ProductListing from "../../components/ProductListing/ProductListing";
 import Arrow from "../../assets/Right 24px.svg";
-import Carousel from "../../components/Carousel";
-import SectionOne from "../../components/SectionOne";
+
+
 import { Link } from "react-router-dom";
+
+
 
 const Home = () => {
   return (
     <>
+    
       {/*S*/}
       <Section id={""} cor={"bg-secondary  bg-opacity-10 "}>
         <Carousel
