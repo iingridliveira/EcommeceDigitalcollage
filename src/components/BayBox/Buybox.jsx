@@ -2,7 +2,8 @@
 /* eslint-disable react/prop-types */
 import Star from "../../assets/Path.svg";
 import SmallStar from "../../assets/Star 1.svg";
-import { OptionCircle,OptionSquare } from "./ProductOptions";
+import { OptionCircle, OptionSquare } from "../ProductOptions/ProductOptions";
+
 
 const BuyBox = ({ name, priceDiscount, price, category }) => {
   return (
@@ -59,7 +60,7 @@ const BuyBox = ({ name, priceDiscount, price, category }) => {
         </article>
         <div className="py-3">
           <OptionSquare />
-          <OptionCircle />
+         <OptionCircle/>
         </div>
         <button
           style={{ background: "#F6AA1C" }}

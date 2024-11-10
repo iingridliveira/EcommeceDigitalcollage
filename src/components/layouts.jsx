@@ -1,5 +1,5 @@
 
-import Header from './header';
+import Header from './Header/header';
 import Footer from './Footer/footer';
 import SearchProvider from '../context';
 // eslint-disable-next-line react/prop-types

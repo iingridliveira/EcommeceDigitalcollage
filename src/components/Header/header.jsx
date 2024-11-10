@@ -1,9 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
-import { SearchContext } from "../context";
+import { SearchContext } from "../../context";
 import { useContext } from "react";
-import Logo from "../assets/logo.svg";
-import  searchimg  from "../assets/search-img.svg"
-import carrinhoCompras from "../assets/carrinhoCompras.svg"
+import Logo from "../../assets/logo.svg";
+import  searchimg  from "../../assets/search-img.svg"
+import carrinhoCompras from "../../assets/carrinhoCompras.svg"
 
 
 const Header = () => {
