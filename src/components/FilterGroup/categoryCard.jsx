@@ -8,6 +8,7 @@ const CategoryCard = ({ setSelectedCategory }) => {
     "Casual": false,
     "Utilitário": false,
     "Corrida": false,
+    "Estado": false,
   });
 
   const handleCheckboxChange = (ev) => {

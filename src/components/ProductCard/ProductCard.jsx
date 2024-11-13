@@ -1,7 +1,7 @@
 import LinkProduct from "./Link";
 
 /* eslint-disable react/prop-types */
-const ProductCard = ({photo, price, name, priceDiscount, index, category, state}) => {
+const ProductCard = ({photo, price, name, priceDiscount, index, category}) => {
     return (
       <>
         <main className=" ">
