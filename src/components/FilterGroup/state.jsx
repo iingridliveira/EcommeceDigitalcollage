@@ -12,10 +12,12 @@ const StateCard = ({setSelectedState}) => {
 const handleCheckboxChange = (ev) => {
     const { name, checked } = ev.target;
 
-    setCheckBoxValue((prevState) == ({
+    setCheckBoxValue((prevState) => ({
         ...prevState,
         [name]: checked,
     }));
+
+    console.log(name)
 
     // Atualiza o estado selecionado no componete pai
 
@@ -41,7 +43,7 @@ return (
                     type="checkbox"
                     name={state}
                     checked={checkBoxValue[state]}
-                    onChange={handleCheckboxChange} />
+                    onChange={handleCheckboxChange}/>
                 <label className="form-check-label">{state}</label>
             </div>
         ))}

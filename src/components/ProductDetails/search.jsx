@@ -16,8 +16,7 @@ const SearchProducts = () => {
   const filteredProducts = buttonseach.filter(
     (product) =>
       (selectedBrands.length === 0 || selectedBrands.includes(product.brand)) &&
-      (selectedCategory.length === 0 ||
-        selectedCategory.includes(product.category)) &&
+      (selectedCategory.length === 0 || selectedCategory.includes(product.category)) &&
       (selectedGender.length === 0 || selectedGender.includes(product.gender)) &&
       (selectedState.length === 0 || selectedState.includes(product.state))
   );
