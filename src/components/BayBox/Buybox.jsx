@@ -8,7 +8,7 @@ import { OptionCircle, OptionSquare } from "../ProductOptions/ProductOptions";
 const BuyBox = ({ name, priceDiscount, price, category }) => {
   return (
     <>
-      <main style={{ width: "700px" }} className="py-5">
+      <main className="py-5 w-700">
         <h3 className="fw-bolder">{name}</h3>
         <p>
           {category}| {name}| REF:38416711
