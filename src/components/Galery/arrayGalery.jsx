@@ -1,23 +1,15 @@
- import Image from "../../../public/img/produc-image-1.jpeg";
- import Image2 from "../../../public/img/produc-image-2.jpeg";
- import Image3 from" ../../../public/img/produc-image-2.jpeg";
- import Image4 from "../../../public/img/produc-image-4.jpeg";
- import Image5 from "../../../public/img/produc-image-5.jpeg";
- import Image6 from "../../../public/img/produc-image-6.jpeg";
- import Image7 from "../../../public/img/produc-image-7.jpeg";
- import Image8 from "../../../public/img/produc-image-8.jpeg";
- import Image9 from "../../../public/img/produc-image-9.jpeg";
+import Image from "../../assets/produc-image-1.png";
+import Image2 from "../../assets/produc-image-2.png";
+import Image3 from "../../assets/produc-image-3.png";
+import Image4 from "../../assets/produc-image-4.png";
+import Image5 from "../../assets/produc-image-5.png";
 
- const ArrayGalery = [
-   { img: <img src={Image} alt="K-Swiss V1" /> },
-   { img2: <img src={Image2} alt="K-Swiss V1" /> },
-   { img3: <img src={Image3} alt="K-Swiss V1" /> },
-   { img4: <img src={Image4} alt="K-Swiss V1" /> },
-   { img5: <img src={Image5} alt="K-Swiss V1" /> },
-   { img6: <img src={Image6} alt="K-Swiss V1" /> },
-   { img7: <img src={Image7} alt="K-Swiss V1" /> },
-   { img8: <img src={Image8} alt="K-Swiss V1" /> },
-   { img9: <img src={Image9} alt="K-Swiss V1" /> },
-   
- ];
- export {ArrayGalery}
+const ArrayGalery = [
+  { img: Image, alt: "K-Swiss V1", caption: "Caption 1" },
+  { img: Image2, alt: "K-Swiss V2", caption: "Caption 2" },
+  { img: Image3, alt: "K-Swiss V3", caption: "Caption 3" },
+  { img: Image4, alt: "K-Swiss V4", caption: "Caption 4" },
+  { img: Image5, alt: "K-Swiss V5", caption: "Caption 5" },
+];
+
+export default ArrayGalery;

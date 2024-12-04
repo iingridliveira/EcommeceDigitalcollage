@@ -51,6 +51,17 @@ h1,h2 {
 footer{
   background-color: #1F1F1F;
 }
+.thumbnail {
+  transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.active-thumbnail {
+  border: 2px solid blue;
+}
 .carousel-indicators [data-bs-target] {
   width: 12px;
   
