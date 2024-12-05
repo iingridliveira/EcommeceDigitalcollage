@@ -2,16 +2,27 @@
 <h1 align="center"> Projeto ecommece sprint 1  </h1>
 
   [Gravação de tela de 2024-12-04 20-58-58.webm](https://github.com/user-attachments/assets/a78c3bea-132f-458d-b578-25ac5a5381d8)
+  
+## Deploy
 
+Para fazer o deploy desse projeto rode
+
+```bash
+  npm  run dev
+```
+
+- [Link](https://ecommece-digitalcollage.vercel.app)
 ## 🚀 Tecnologias
 
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- React
+- React.js
 - BOOTSTRAP
 - JAVASCRIP
 - react-router-dom
+- vercel
+- vite
   
 ## Referência
 
