@@ -8,6 +8,7 @@ const CategoryCard = ({ setSelectedCategory }) => {
     "Casual": false,
     "Utilitário": false,
     "Corrida": false,
+    "Estado": false,
   });
 
   const handleCheckboxChange = (ev) => {
@@ -29,7 +30,7 @@ const CategoryCard = ({ setSelectedCategory }) => {
 
   return (
     <main
-      className="d-flex flex-column flex-shrink-0 p-5 bg-white"
+      className="d-flex flex-column flex-shrink-0 p-5 py-2 bg-white"
       style={{ width: "300px" }}
     >
       <h6 className="pt-2">Categoria</h6>

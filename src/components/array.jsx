@@ -9,6 +9,7 @@ const ProductListingArray = [
     image: <img src={SneakersBox} alt="K-Swiss V1" />,
     price: 200,
     priceDiscount: 149.9,
+    state: "Novo"
   },
   {
     category: "Esporte e lazer",
@@ -17,6 +18,7 @@ const ProductListingArray = [
     gender: "Feminino",
     image: <img src={SneakersBox} alt="Adiddas Run Pro" />,
     price: 249.9,
+    state: "Novo"
   },
   {
     category: "Casual",
@@ -25,6 +27,7 @@ const ProductListingArray = [
     gender: "Masculino",
     image: <img src={SneakersBox} alt="Nike AirMax" />,
     price: 299.9,
+    state: "Novo"
   },
   {
     category: "Casual",
@@ -33,6 +36,7 @@ const ProductListingArray = [
     gender: "Feminino",
     image: <img src={SneakersBox} alt="Puma Runner" />,
     price: 159.9,
+    state: "Usado"
   },
   {
 
@@ -43,6 +47,7 @@ const ProductListingArray = [
     image: <img src={SneakersBox} alt="K-Swiss V1" />,
     price: 200,
     priceDiscount: 149.9,
+    state: "Usado"
   },
   {
     category: "Utilitário",
@@ -51,6 +56,7 @@ const ProductListingArray = [
     gender: "Feminino",
     image: <img src={SneakersBox} alt="Adiddas Run Pro" />,
     price: 249.9,
+    state: "Novo"
   },
   {
     category: "Corrida",
@@ -59,6 +65,7 @@ const ProductListingArray = [
     gender: "Masculino",
     image: <img src={SneakersBox} alt="Nike AirMax" />,
     price: 299.9,
+    state: "Usado"
   },
   {
     category: "Corrida",
@@ -67,6 +74,7 @@ const ProductListingArray = [
     gender: "Feminino",
     image: <img src={SneakersBox} alt="Puma Runner" />,
     price: 159.9,
+    state: "Novo"
   },
 ];
 

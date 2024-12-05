@@ -1,7 +1,7 @@
 import LinkProduct from "./Link";
 
 /* eslint-disable react/prop-types */
-const ProductCard = ({photo, price,name,priceDiscount, index, category}) => {
+const ProductCard = ({photo, price, name, priceDiscount, index, category}) => {
     return (
       <>
         <main className=" ">
@@ -10,7 +10,7 @@ const ProductCard = ({photo, price,name,priceDiscount, index, category}) => {
             <div className="bg-white py-5 shadow-lg  me-3 rounded-1 py-3 align-items-center">
               {photo}
             </div>
-            <p className="pt-3 fw-bolder opacity-75">tênes</p>
+            <p className="pt-3 fw-bolder opacity-75">tênis</p>
             <h4 className="fw-light w-100 text-black text-opacity-75">
               {name}
             </h4>

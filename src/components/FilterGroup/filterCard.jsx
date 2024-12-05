@@ -6,10 +6,10 @@ import { useState } from "react";
 // Componente de filtro K-Swiss
 const FilterCard = ({ setSelectedBrands }) => {
   const [checkBoxValue, setCheckBoxValue] = useState({
-    Adiddas: false,
+    Adidas: false,
     "K-Swiss": false,
     Nike: false,
-    Calenciaga: false,
+    Balenciaga: false,
     Puma: false,
   });
 
@@ -32,10 +32,10 @@ const FilterCard = ({ setSelectedBrands }) => {
 
   return (
     <main
-      className="d-flex flex-column flex-shrink-0 p-5 bg-white  "
+      className="d-flex flex-column flex-shrink-0 p-5 py-2 bg-white  "
       style={{ width: "300px" }}
     >
-      <div className="border-bottom border-1 border-secondary border-opacity-50 ">
+      <div className="border-bottom border-1 mt-4 border-secondary border-opacity-50 ">
         <p>Filtrar por</p>
       </div>
       <h6 className="pt-2"> Marca</h6>
