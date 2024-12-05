@@ -1,8 +1,15 @@
-# React + Vite
+# Projeto Frot-end geração tech
+<h1 align="center"> Projeto ecommece sprint 1  </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  [Gravação de tela de 2024-12-04 20-58-58.webm](https://github.com/user-attachments/assets/a78c3bea-132f-458d-b578-25ac5a5381d8)
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- React
+- BOOTSTRAP
+- JAVASCRIP
+- react-router-dom
+  
